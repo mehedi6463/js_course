@@ -6,6 +6,51 @@
     <title>JS Skill Training</title>
   </head>
   <body>
-    <h2>JS Function</h2>
+    <!-- inline code for onclick event--
+
+    <h2 id="cng">Inner HTML</h2>
+    <button
+      type="button"
+      onclick="
+        document.getElementById('cng').innerHTML = 'inner HTML updated'
+      ">Try it</button>
+    -->
+
+    <!-- onclick with function -->
+    <h3 id="funct">Is the Function work?</h3>
+    <button type="button" onclick="myFuctions()">click to check</button>
+    <script>
+      function myFuctions() {
+        document.getElementById("funct").innerHTML =
+          "Yes it's Function is Working";
+      }
+    </script>
+
+    <!-- <p>This is the sum of 5 & 6</p>
+    <p id="numberr"></p>
+    <script>
+      document.getElementById("numberr").innerHTML = 5 + 6;
+    </script> -->
+
+    <!-- <h2>this is paragraph</h2>
+    <script>
+      document.write(19 * 2);
+    </script> -->
+
+    <!-- window.alert function -->
+    <!-- <h2>window alert function is working</h2>
+    <script>
+      window.alert("thank you to visit us");
+      //alert("thank you to visit us"); also you can use this code in real code
+    </script> -->
+
+    <!-- window.print function -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+      aspernatur rerum non iste nulla? Laboriosam, obcaecati! Nisi cumque
+      deleniti corrupti.
+    </p>
+
+    <button type="button" onclick="print()">print page</button>
   </body>
 </html>
