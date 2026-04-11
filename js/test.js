@@ -1,3 +1,4 @@
-function testFun {
+function nameMy() {
+    document.getElementById('teste').innerHTML='test update';
     
 }
