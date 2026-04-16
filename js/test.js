@@ -2,9 +2,9 @@ function nameMy() {
     document.getElementById('teste').innerHTML='test update';
     
 }
-
-function myFunction1() {
-    document.getElementById('function').innerHTML='its a function';
-    
-    
+// finction with parameter
+function sleepTime(nam, time) {
+    console.log(nam + " is sleeping from " + time);    
 }
+sleepTime("mahedi", "9pm");
+sleepTime("hasan", "12am");
