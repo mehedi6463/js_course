@@ -6,5 +6,4 @@ function nameMy() {
 function sleepTime(nam, time) {
     console.log(nam + " is sleeping from " + time);    
 }
-sleepTime("mahedi", "9pm");
-sleepTime("hasan", "12am");
+
