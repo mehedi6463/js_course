@@ -15,16 +15,16 @@ function myName(x,y) {
 }
 // let z=myName(3,6);
 // console.log(myName(3,8));
-document.getElementById("demo").innerHTML=myName(3,8);
+// document.getElementById("demo").innerHTML=myName(3,8);
 
 // function
-function sayHello() {
-  return "Hello World This is JS";
-}
+// function sayHello() {
+//   return "Hello World This is JS";
+// }
 
-let greeting = sayHello();
+// let greeting = sayHello();
 
-document.getElementById("demo2").innerHTML = greeting;
+// document.getElementById("demo2").innerHTML = greeting;
 
 //object with function
 // let car={

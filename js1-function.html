@@ -27,10 +27,10 @@
     </script>
 
      <p>This is the sum of 5 & 6</p>
-    <p id="numberr"></p>
+    <!-- <p id="numberr"></p>
     <script>
       document.getElementById("numberr").innerHTML = 5 + 6;
-    </script>
+    </script> -->
 
     <!-- <h2>this is paragraph</h2>
     <script>
@@ -50,11 +50,32 @@
       aspernatur rerum non iste nulla? Laboriosam, obcaecati! Nisi cumque
       deleniti corrupti.
     </p>
-    <p id="teste">
+    <!-- <p id="teste">
       
     </p>
 
-    <button type="button" onclick="nameMy()">see update</button>
-    <script src="./js/test.js"></script>
+    <button type="button" onclick="nameMy()">see update</button> -->
+    <button onclick="this.innerHTML= Date()">click for date</button>
+    <script>
+       //object with function
+        let car={
+            name:"BMW",
+            model:2026,
+            weight:"1000-kg",
+            color:"Black",
+            start: function () {
+            console.log("car has started");
+            },
+        };
+        // console.log(car.name, car.model);
+        console.log(car['name']);
+        car.start();
+
+        let p = new Number(10);
+        let q = true;
+        console.log(typeof p);
+        console.log(typeof q);
+        
+    </script>
   </body>
 </html>
