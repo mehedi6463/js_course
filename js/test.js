@@ -15,7 +15,7 @@ function myName(x,y) {
 }
 // let z=myName(3,6);
 // console.log(myName(3,8));
-document.getElementById("demo").innerHTML=myName(3,6);
+document.getElementById("demo").innerHTML=myName(3,8);
 
 // function
 function sayHello() {
