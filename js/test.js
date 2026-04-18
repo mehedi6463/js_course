@@ -1,17 +1,17 @@
 function nameMy() {
-    document.getElementById('teste').innerHTML='test update';
-    
+    document.getElementById('teste').innerHTML = 'test update';
+
 }
 // function with parameter
 function sleepTime(nam, time) {
-    console.log(nam + " is sleeping from " + time);    
+    console.log(nam + " is sleeping from " + time);
 }
 sleepTime("mahedi", "9pm");
 sleepTime("hasan", "12am");
 
 // function with return
-function myName(x,y) {
-    return x+y;
+function myName(x, y) {
+    return x + y;
 }
 // let z=myName(3,6);
 // console.log(myName(3,8));
@@ -38,6 +38,9 @@ function myName(x,y) {
 // };
 // console.log(car.name);
 
+//onclick event
 
+function displayDate() {
+    document.getElementById("demo000").innerHTML = Date();
 
-
+}

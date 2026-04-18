@@ -55,8 +55,14 @@
     </p>
 
     <button type="button" onclick="nameMy()">see update</button> -->
-    <button onclick="this.innerHTML= Date()">click for date</button>
-    <script>
+    //display events oinside the the button
+    <button onclick="this.innerHTML= Date();">click for date </button>
+    <br><br> //display events outside the the button
+    <button onclick="displayDate();">click for date2</button>
+    <br><br>
+    <p id="demo000"></p>
+
+    <script src="./js/test.js">
         //object with function
         let car = {
             name: "BMW",
@@ -76,6 +82,7 @@
         console.log(typeof p);
         console.log(typeof q);
     </script>
+
 </body>
 
 </html>
