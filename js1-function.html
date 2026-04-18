@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Skill Training</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- inline code for onclick event--
 
     <h2 id="cng">Inner HTML</h2>
@@ -20,13 +22,13 @@
     <h3 id="funct">Is the Function work?</h3>
     <button type="button" onclick="myFuctions()">click to check</button>
     <script>
-      function myFuctions() {
-        document.getElementById("funct").innerHTML =
-          "Yes it's Function is Working";
-      }
+        function myFuctions() {
+            document.getElementById("funct").innerHTML =
+                "Yes it's Function is Working";
+        }
     </script>
 
-     <p>This is the sum of 5 & 6</p>
+    <p>This is the sum of 5 & 6</p>
     <!-- <p id="numberr"></p>
     <script>
       document.getElementById("numberr").innerHTML = 5 + 6;
@@ -46,9 +48,7 @@
 
     <!-- window.print function -->
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-      aspernatur rerum non iste nulla? Laboriosam, obcaecati! Nisi cumque
-      deleniti corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur rerum non iste nulla? Laboriosam, obcaecati! Nisi cumque deleniti corrupti.
     </p>
     <!-- <p id="teste">
       
@@ -57,14 +57,14 @@
     <button type="button" onclick="nameMy()">see update</button> -->
     <button onclick="this.innerHTML= Date()">click for date</button>
     <script>
-       //object with function
-        let car={
-            name:"BMW",
-            model:2026,
-            weight:"1000-kg",
-            color:"Black",
-            start: function () {
-            console.log("car has started");
+        //object with function
+        let car = {
+            name: "BMW",
+            model: 2026,
+            weight: "1000-kg",
+            color: "Black",
+            start: function() {
+                console.log("car has started");
             },
         };
         // console.log(car.name, car.model);
@@ -73,9 +73,11 @@
 
         let p = new Number(10);
         let q = true;
+        let qs = true;
         console.log(typeof p);
         console.log(typeof q);
-        
+        console.log(typeof qs);
     </script>
-  </body>
+</body>
+
 </html>
