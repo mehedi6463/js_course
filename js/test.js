@@ -26,15 +26,18 @@ let greeting = sayHello();
 
 document.getElementById("demo2").innerHTML = greeting;
 
+//object with function
+let car={
+    name:"BMW",
+    model:2026,
+    weight:"1000kg",
+    color:"Black",
+    start: function () {
+        console.log("car has started");
+    },
+};
+console.log(car.name);
 
-
- function sayHi() {
-     var name ='JavaScript';
-     let age = 21;
-    console.log(name);
-    console.log(age);
-}
- sayHi();
 
 
 
