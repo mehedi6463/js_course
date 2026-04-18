@@ -13,8 +13,9 @@ sleepTime("hasan", "12am");
 function myName(x,y) {
     return x+y;
 }
-let z=myName(3,6);
-console.log(z);
+// let z=myName(3,6);
+// console.log(myName(3,8));
+document.getElementById("demo").innerHTML=myName(3,6);
 
 // function
 function sayHello() {
@@ -23,6 +24,17 @@ function sayHello() {
 
 let greeting = sayHello();
 
-document.getElementById("demo").innerHTML = greeting;
+document.getElementById("demo2").innerHTML = greeting;
+
+
+
+ function sayHi() {
+     var name ='JavaScript';
+     let age = 21;
+    console.log(name);
+    console.log(age);
+}
+ sayHi();
+
 
 
