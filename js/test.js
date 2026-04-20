@@ -44,3 +44,33 @@ function displayDate() {
     document.getElementById("demo000").innerHTML = Date();
 
 }
+//using varriavle in 
+let userName = "Mehedi";
+let PassWord = "123errfd@$";
+
+document.getElementById('demo22').innerHTML = `Welcom to our team. Your ID: ${userName}, and Password: ${PassWord}.`;
+
+//using html tags with for loop
+// let header="This is a header";
+// let tags=["1st", '2nd', `3rd`];
+
+// let htMl = `<h2> ${header}</h2> <ul>`;
+
+// for (const x of tags){
+//     htMl +=`<li>${x}</li>`;
+    
+// }
+// htMl +=`</ul>`;
+// document.getElementById("demo3").innerHTML= header;
+
+let header = "Template Strings";
+// let tags = ["template strings", "javascript", "es6"];
+
+// let html = `<h2>${header}</h2><ul>`;
+
+// for (const x of tags) {
+//   html += `<li>${x}</li>`;
+// }
+
+// html += `</ul>`;
+document.getElementById("demo").innerHTML = `${header}`;
