@@ -38,6 +38,11 @@ function myName(x,y) {
 // };
 // console.log(car.name);
 
+ let text ="asdfg hjklo \"iuytrew\" qzxcvbnnm";
+//    document.getElementById("demo").innerHTML =text.length;
+ console.log(text.length);
+ console.log(text);
+
 
 
 
