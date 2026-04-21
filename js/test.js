@@ -38,15 +38,7 @@ function myName(x, y) {
 // };
 // console.log(car.name);
 
-<<<<<<< HEAD
- let text ="asdfg hjklo \"iuytrew\" qzxcvbnnm";
-//    document.getElementById("demo").innerHTML =text.length;
- console.log(text.length);
- console.log(text);
-
-=======
 //onclick event
->>>>>>> 8327562f2fd2d0b9d681235b8110c348e3bc9e44
 
 function displayDate() {
     document.getElementById("demo000").innerHTML = Date();
@@ -72,13 +64,13 @@ document.getElementById('demo22').innerHTML = `Welcom to our team. Your ID: ${us
 // document.getElementById("demo3").innerHTML= header;
 
 let header = "Template Strings";
-// let tags = ["template strings", "javascript", "es6"];
+let tags = ["template strings", "javascript", "es6"];
 
-// let html = `<h2>${header}</h2><ul>`;
+let html = `<h2>${header}</h2><ul>`;
 
-// for (const x of tags) {
-//   html += `<li>${x}</li>`;
-// }
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
 
-// html += `</ul>`;
+html += `</ul>`;
 document.getElementById("demo").innerHTML = `${header}`;
