@@ -1,5 +1,19 @@
-//basic array declaration 
-const cars=["BMW","Volvo","Rols Royal","Toyota","Corola"];
+/* //basic array declaration
+const cars=["BMW ","Volvo ","Rols Royal ","Toyota ","Corola"];
+
+document.getElementById("demo").innerHTML=cars.toString();
+document.getElementById("demo1").innerHTML=cars.join(" * ");
+document.getElementById("demo1").innerHTML=cars.join(" * ");
+document.getElementById("demo1").innerHTML=cars.push("Kiwi");
+*/
+
+
+/*// pop methood
+document.getElementById("demo1").innerHTML= cars.pop();
+let pOp=cars.pop();
+console.log(pOp);
+*/
+
 
 // document.getElementById("arrays").innerHTML=car.toString();
 // document.getElementById("arrays").innerHTML=car.length;
@@ -40,7 +54,11 @@ const cars=["BMW","Volvo","Rols Royal","Toyota","Corola"];
 
 //foreach lopp- recomended fro array
 // const fruits=["Apple","Banana","Carrot","Pineaple","Orange", "Srtobery"];
+<<<<<<< HEAD
 // // fruits.push="Lemon";
+=======
+//  fruits.push="Lemon";
+>>>>>>> 9846b4e50a3b7d96e646c9b407e567cb4692a1ac
 // console.log(fruits);
 
 // function fruitFun(params) {
@@ -52,5 +70,41 @@ const cars=["BMW","Volvo","Rols Royal","Toyota","Corola"];
 // htmlCode +="</ul>";
 
 // document.getElementById("demo").innerHTML=htmlCode;
+<<<<<<< HEAD
+=======
+
+// multiple array join "contact()" also able to add array elements
+// const cars=["BMW ","Volvo ","Rols Royal ","Toyota ","Corola"];
+// const cars2=["BMW2 ","Volvo2 ","Rols Royal2 ","Toyota2 ","Corola2"];
+// const cars3=["BMW3 ","Volvo3 ","Rols Royal3 ","Toyota3 ","Corola3"];
+
+// const myCars = cars.concat(cars2, cars3);
+// console.log(myCars);
+
+//sort array elements alphabetically
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.getElementById("demo").innerHTML=fruits;
+
+// let fruit = fruits.sort();
+// document.getElementById("demo1").innerHTML=fruit;
+
+//revers array elements alphabetically
+/*const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+document.getElementById("demo").innerHTML=fruits;
+
+let fruit = fruits.reverse();
+document.getElementById("demo1").innerHTML=fruit;*/
+
+//sort with number
+// const points=[100, 59, 64, 20, 40, 6, 83,12];
+// points.sort(
+//     function (a, b) {
+//         return a-b; //for asscending
+        //return s-a; //for desending
+//     }
+// );
+// console.log(points[points.length-1]);
+// document.getElementById("demo").innerHTML=points.join(" / ");
+>>>>>>> 9846b4e50a3b7d96e646c9b407e567cb4692a1ac
 
 
