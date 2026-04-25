@@ -107,4 +107,7 @@ document.getElementById("demo1").innerHTML=fruit;*/
 // document.getElementById("demo").innerHTML=points.join(" / ");
 >>>>>>> 9846b4e50a3b7d96e646c9b407e567cb4692a1ac
 
+// Array Constant
+
+
 
