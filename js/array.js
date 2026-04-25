@@ -39,18 +39,18 @@ const cars=["BMW","Volvo","Rols Royal","Toyota","Corola"];
 // document.getElementById("arrays").innerHTML = text;
 
 //foreach lopp- recomended fro array
-const fruits=["Apple","Banana","Carrot","Pineaple","Orange", "Srtobery"];
-// fruits.push="Lemon";
-console.log(fruits);
+// const fruits=["Apple","Banana","Carrot","Pineaple","Orange", "Srtobery"];
+// // fruits.push="Lemon";
+// console.log(fruits);
 
-function fruitFun(params) {
-    htmlCode +="<li>" + params + "</li>";
-}
+// function fruitFun(params) {
+//     htmlCode +="<li>" + params + "</li>";
+// }
 
-let htmlCode="<ul>";
-fruits.forEach(fruitFun);
-htmlCode +="</ul>";
+// let htmlCode="<ul>";
+// fruits.forEach(fruitFun);
+// htmlCode +="</ul>";
 
-document.getElementById("demo").innerHTML=htmlCode;
+// document.getElementById("demo").innerHTML=htmlCode;
 
 
