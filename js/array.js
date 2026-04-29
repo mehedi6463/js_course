@@ -54,11 +54,8 @@ console.log(pOp);
 
 //foreach lopp- recomended fro array
 // const fruits=["Apple","Banana","Carrot","Pineaple","Orange", "Srtobery"];
-<<<<<<< HEAD
 // // fruits.push="Lemon";
-=======
 //  fruits.push="Lemon";
->>>>>>> 9846b4e50a3b7d96e646c9b407e567cb4692a1ac
 // console.log(fruits);
 
 // function fruitFun(params) {
@@ -70,8 +67,6 @@ console.log(pOp);
 // htmlCode +="</ul>";
 
 // document.getElementById("demo").innerHTML=htmlCode;
-<<<<<<< HEAD
-=======
 
 // multiple array join "contact()" also able to add array elements
 // const cars=["BMW ","Volvo ","Rols Royal ","Toyota ","Corola"];
@@ -105,9 +100,21 @@ document.getElementById("demo1").innerHTML=fruit;*/
 // );
 // console.log(points[points.length-1]);
 // document.getElementById("demo").innerHTML=points.join(" / ");
->>>>>>> 9846b4e50a3b7d96e646c9b407e567cb4692a1ac
 
-// Array Constant
+// date object
+const d = new Date();
+// document.getElementById("demo").innerHTML = d.toString();
+// document.getElementById("demo").innerHTML = d.toDateString();
+// document.getElementById("demo").innerHTML = d.toISOString();
+// document.getElementById("demo").innerHTML = d.toUTCString();
+document.getElementById("demo").innerHTML = d.getFullYear();
+// console.log(d.getFullYear());
+console.log(d.getDate());
+
+//let x = Date('March 30, 2011');
+//console.log(x);
+
+
 
 
 
