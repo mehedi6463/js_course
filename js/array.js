@@ -100,4 +100,63 @@ document.getElementById("demo1").innerHTML=fruit;*/
 // console.log(points[points.length-1]);
 // document.getElementById("demo").innerHTML=points.join(" / ");
 
+//foreach() inside div
+// const cars=["BMW ","Volvo ","Rols Royal ","Toyota ","Corola"];
+
+/* let code="<div>";
+cars.forEach(codeFunc);
+document.getElementById("demo").innerHTML=code;
+
+function codeFunc(a, r) {
+    code +=a + "<br />";
+}
+code +="</div>";*/
+
+//map() with list item
+// const numbers1=[20, 11, 50, 45, 63, 7, 1, 71, 36, 2, 13];
+/*let listItem="<ul>";
+cars.map(myCars);
+document.getElementById("demo").innerHTML=listItem;
+function myCars(value) {
+    listItem +="<li>"+ value*2 +"</li>";
+}
+listItem +="</ul>";*/
+// const numbers2= numbers1.map(myNumbers);
+// function myNumbers(value) {
+//     return value * 2;    
+// }
+// document.getElementById("demo").innerHTML= numbers2;
+
+// filter() with sort
+// const numbers1=[20, 11, 50, 45, 63, 7, 1, 71, 36, 2, 13,96];
+// const numbers2 = numbers1.filter(myNumbers);
+
+// function myNumbers(value) {
+//     return value <= 80;
+    
+// }
+// document.getElementById("demo").innerHTML=numbers2.sort((a,b) => a-b);
+
+//reduce()
+// const numbers1=[20, 11, 50, 45, 63, 7, 1, 71, 36, 2, 13,96];
+// const numbers2 = numbers1.reduce(myNumbers, 500);
+
+// function myNumbers(total, value) {
+//     return total + value;
+    
+// }
+// document.getElementById("demo").innerHTML=numbers2;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
