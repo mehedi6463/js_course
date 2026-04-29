@@ -146,7 +146,7 @@ listItem +="</ul>";*/
     
 // }
 // document.getElementById("demo").innerHTML=numbers2;
-<<<<<<< HEAD
+
 // console.log(Math.PI);
 
 //Random number genareted function 
@@ -158,19 +158,3 @@ function getRndInteger(min, max) {
 // };
 console.log(getRndInteger(101, 102));
 document.getElementById("demo1").innerHTML= getRndInteger(0, 10);
-=======
-
-
-
-
-
-
-
-
->>>>>>> f8396e7c192c429d36e7d7145b3b0546add1320f
-
-
-
-
-
-
