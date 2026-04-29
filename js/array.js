@@ -84,11 +84,11 @@ console.log(pOp);
 // document.getElementById("demo1").innerHTML=fruit;
 
 //revers array elements alphabetically
-/*const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 document.getElementById("demo").innerHTML=fruits;
 
 let fruit = fruits.reverse();
-document.getElementById("demo1").innerHTML=fruit;*/
+document.getElementById("demo1").innerHTML=fruit;
 
 //sort with number
 // const points=[100, 59, 64, 20, 40, 6, 83,12];
