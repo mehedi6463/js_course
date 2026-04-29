@@ -54,7 +54,6 @@ console.log(pOp);
 
 //foreach lopp- recomended fro array
 // const fruits=["Apple","Banana","Carrot","Pineaple","Orange", "Srtobery"];
-// // fruits.push="Lemon";
 //  fruits.push="Lemon";
 // console.log(fruits);
 
@@ -84,11 +83,11 @@ console.log(pOp);
 // document.getElementById("demo1").innerHTML=fruit;
 
 //revers array elements alphabetically
-const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+/*const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 document.getElementById("demo").innerHTML=fruits;
 
 let fruit = fruits.reverse();
-document.getElementById("demo1").innerHTML=fruit;
+document.getElementById("demo1").innerHTML=fruit;*/
 
 //sort with number
 // const points=[100, 59, 64, 20, 40, 6, 83,12];
@@ -101,18 +100,60 @@ document.getElementById("demo1").innerHTML=fruit;
 // console.log(points[points.length-1]);
 // document.getElementById("demo").innerHTML=points.join(" / ");
 
-// date object
-const d = new Date();
-// document.getElementById("demo").innerHTML = d.toString();
-// document.getElementById("demo").innerHTML = d.toDateString();
-// document.getElementById("demo").innerHTML = d.toISOString();
-// document.getElementById("demo").innerHTML = d.toUTCString();
-document.getElementById("demo").innerHTML = d.getFullYear();
-// console.log(d.getFullYear());
-console.log(d.getDate());
+//foreach() inside div
+// const cars=["BMW ","Volvo ","Rols Royal ","Toyota ","Corola"];
 
-//let x = Date('March 30, 2011');
-//console.log(x);
+/* let code="<div>";
+cars.forEach(codeFunc);
+document.getElementById("demo").innerHTML=code;
+
+function codeFunc(a, r) {
+    code +=a + "<br />";
+}
+code +="</div>";*/
+
+//map() with list item
+// const numbers1=[20, 11, 50, 45, 63, 7, 1, 71, 36, 2, 13];
+/*let listItem="<ul>";
+cars.map(myCars);
+document.getElementById("demo").innerHTML=listItem;
+function myCars(value) {
+    listItem +="<li>"+ value*2 +"</li>";
+}
+listItem +="</ul>";*/
+// const numbers2= numbers1.map(myNumbers);
+// function myNumbers(value) {
+//     return value * 2;    
+// }
+// document.getElementById("demo").innerHTML= numbers2;
+
+// filter() with sort
+// const numbers1=[20, 11, 50, 45, 63, 7, 1, 71, 36, 2, 13,96];
+// const numbers2 = numbers1.filter(myNumbers);
+
+// function myNumbers(value) {
+//     return value <= 80;
+    
+// }
+// document.getElementById("demo").innerHTML=numbers2.sort((a,b) => a-b);
+
+//reduce()
+// const numbers1=[20, 11, 50, 45, 63, 7, 1, 71, 36, 2, 13,96];
+// const numbers2 = numbers1.reduce(myNumbers, 500);
+
+// function myNumbers(total, value) {
+//     return total + value;
+    
+// }
+// document.getElementById("demo").innerHTML=numbers2;
+
+
+
+
+
+
+
+
 
 
 
