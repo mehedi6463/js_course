@@ -150,11 +150,12 @@ listItem +="</ul>";*/
 // console.log(Math.PI);
 
 //Random number genareted function 
+function genNumber(max, min) {
+        return Math.ceil(Math.random() *(max+min))+1;
+        
+}
 function getRndInteger(min, max) {
-  return Math.ceil(Math.random() * (max - min) ) + min;
+  return Math.floor(Math.random() * (max - min) ) * min;
 };
-// function getRndInteger(min, max) {
-//   return Math.floor(Math.random() * (max - min) ) + min;
-// };
 console.log(getRndInteger(101, 102));
-document.getElementById("demo1").innerHTML= getRndInteger(0, 10);
+document.getElementById("demo1").innerHTML= genNumber(10, 100);
