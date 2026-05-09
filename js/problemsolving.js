@@ -70,3 +70,16 @@ console.log(duplicates.toSorted(function(a,b){return a-b}));
 console.log(duplicates.toSorted(function(a,b){return b-a}));
 */
 
+//Boolean data type condition
+//const hour = new Date().getHours();
+/*
+let greeting;
+
+if (new Date().getHours() < 10) {
+  greeting = "Good day!";
+} else {
+  greeting = "Good evening!";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+*/
