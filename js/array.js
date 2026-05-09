@@ -150,6 +150,7 @@ listItem +="</ul>";*/
 // console.log(Math.PI);
 
 //Random number genareted function 
+<<<<<<< HEAD
 function genNumber(max, min) {
         return Math.ceil(Math.random() *(max+min))+1;
         
@@ -159,3 +160,16 @@ function getRndInteger(min, max) {
 };
 console.log(getRndInteger(101, 102));
 document.getElementById("demo1").innerHTML= genNumber(10, 100);
+=======
+// function getRndInteger(min, max) {
+//   return Math.ceil(Math.random() * (max - min) ) + min;
+// };
+// function getRndInteger(min, max) {
+//   return Math.floor(Math.random() * (max - min) ) + min;
+// };
+// console.log(getRndInteger(101, 102));
+// document.getElementById("demo1").innerHTML= getRndInteger(0, 10);
+
+
+
+>>>>>>> 3c446422713c839b4b7ab2b7eaaeefe5222ab70a
