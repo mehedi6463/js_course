@@ -83,3 +83,14 @@ if (new Date().getHours() < 10) {
 
 document.getElementById("demo").innerHTML = greeting;
 */
+//Ternary oparator 
+/*
+let age =26;
+console.log(
+    age >= 18 
+    ? age <= 25 
+    ? "You are Adult" 
+    : "You are Middle age"
+    : "Your are Child"
+);
+*/
