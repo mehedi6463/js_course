@@ -52,11 +52,45 @@ document.getElementById("demo").innerHTML="Day is " + day;
 */
 
 //for loop in array with alphabetic sorted...
-let cars=['BMW', "Rols Royals", "Lamborgini", "Corola", "Saab", "Volvo", "Ford"];
+// let cars=['BMW', "Rols Royals", "Lamborgini", "Corola", "Saab", "Volvo", "Ford"];
 
-for (let i = 0; i < cars.length; i++) {
-    let carSorted =cars.toSorted();
-    console.log(carSorted[i]);
+// for (let i = 0; i < cars.length; i++) {
+//     let carSorted =cars.toSorted();
+//     console.log(carSorted[i]);
     
+// }
+// console.log("its done...");
+
+//For loop
+/*
+const cars =["BMW", "Audi", "Volvo", "Rols Royals"];
+let text ="";
+
+for(i=0; i<cars.length; i++){
+let carSort=cars.toSorted();
+text += carSort[i]+"<br>";
 }
-console.log("its done...");
+
+document.getElementById("demo").innerHTML=text;
+*/
+
+//For in loop with object...
+/*
+const person = {fname:"Mehedi",lname:"Hasan", age:30};
+let text ="";
+
+for(let x in person){
+//console.log(x);
+text += person[x] + " " ;
+}
+document.getElementById("demo").innerHTML=text;
+*/
+
+//For in loop with array...
+const number =[2, 5, 7, 1, 6, 3, 9, 4];
+
+let text ="";
+for (let x in number){
+    let numSort=number.toSorted();
+    console.log(numSort[x]);
+}
