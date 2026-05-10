@@ -40,5 +40,8 @@ switch (data) {
         break;
 
     default:
+        day="Not Found";
         break;
 }
+document.getElementById("demo").innerHTML="Today is " + day;
+console.log(day);
