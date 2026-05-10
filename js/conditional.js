@@ -1,4 +1,4 @@
-//if else condition
+//if else condition...
 // let age =3;
 
 // if (age > 18) {
@@ -11,8 +11,8 @@
 //     console.log("You are Child");
 // }
 
-//switch case
-
+//switch case using date object...
+/*
 let day;
 let data= new Date().getDay();
 
@@ -40,8 +40,26 @@ switch (data) {
         break;
 
     default:
+<<<<<<< HEAD
         day="Not Found";
         break;
 }
 document.getElementById("demo").innerHTML="Today is " + day;
 console.log(day);
+=======
+        day="NOT FOUND";
+        break;
+}
+document.getElementById("demo").innerHTML="Day is " + day;
+*/
+
+//for loop in array with alphabetic sorted...
+let cars=['BMW', "Rols Royals", "Lamborgini", "Corola", "Saab", "Volvo", "Ford"];
+
+for (let i = 0; i < cars.length; i++) {
+    let carSorted =cars.toSorted();
+    console.log(carSorted[i]);
+    
+}
+console.log("its done...");
+>>>>>>> 031dcfbd694f383911d6409827ba85dc78dafc74
