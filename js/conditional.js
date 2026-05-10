@@ -52,11 +52,55 @@ document.getElementById("demo").innerHTML="Day is " + day;
 */
 
 //for loop in array with alphabetically sorted...
-let cars=['BMW', "Rolls-Royce", "Lamborghini", "Corolla", "Saab", "Volvo", "Ford"];
+// let cars=['BMW', "Rolls-Royce", "Lamborghini", "Corolla", "Saab", "Volvo", "Ford"];
 
-for (let i = 0; i < cars.length; i++) {
-    let carSorted =cars.toSorted();
-    console.log(carSorted[i]);
+// for (let i = 0; i < cars.length; i++) {
+//     let carSorted =cars.toSorted();
+//     console.log(carSorted[i]);
     
+// }
+// console.log("its done...");
+
+//For loop
+/*
+const cars =["BMW", "Audi", "Volvo", "Rolls-Royce"];
+let text ="";
+
+for(i=0; i<cars.length; i++){
+let carSort=cars.toSorted();
+text += carSort[i]+"<br>";
 }
-console.log("its done...");
+
+document.getElementById("demo").innerHTML=text;
+*/
+
+//For in loop with object... recommended for OBJECT
+/*
+const person = {fname:"Mehedi",lname: "Hasan", age:30};
+let text ="";
+
+for(let x in person){
+//console.log(x);
+text += person[x] + " " ;
+}
+document.getElementById("demo").innerHTML=text;
+*/
+
+//For in loop with array... for in loop is not recommended for array
+/*
+const number =[2, 5, 7, 1, 6, 3, 9, 4];
+
+let text ="";
+for (let x in number){
+    let numSort=number.toSorted();
+    console.log(numSort[x]);
+}
+*/
+
+//For OF loop with array... recommended for array
+/*
+const number =[2, 5, 7, 1, 6, 3, 9, 4];
+for (let x of number){
+    console.log(x);
+}
+*/
