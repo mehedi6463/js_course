@@ -40,13 +40,11 @@ switch (data) {
         break;
 
     default:
-<<<<<<< HEAD
         day="Not Found";
         break;
 }
 document.getElementById("demo").innerHTML="Today is " + day;
 console.log(day);
-=======
         day="NOT FOUND";
         break;
 }
@@ -62,4 +60,3 @@ for (let i = 0; i < cars.length; i++) {
     
 }
 console.log("its done...");
->>>>>>> 031dcfbd694f383911d6409827ba85dc78dafc74
