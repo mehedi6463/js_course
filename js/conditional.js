@@ -51,8 +51,8 @@ console.log(day);
 document.getElementById("demo").innerHTML="Day is " + day;
 */
 
-//for loop in array with alphabetic sorted...
-let cars=['BMW', "Rols Royals", "Lamborgini", "Corola", "Saab", "Volvo", "Ford"];
+//for loop in array with alphabetically sorted...
+let cars=['BMW', "Rolls-Royce", "Lamborghini", "Corolla", "Saab", "Volvo", "Ford"];
 
 for (let i = 0; i < cars.length; i++) {
     let carSorted =cars.toSorted();
