@@ -74,7 +74,7 @@ text += carSort[i]+"<br>";
 document.getElementById("demo").innerHTML=text;
 */
 
-//For in loop with object...
+//For in loop with object... recomanded for OBJECT
 /*
 const person = {fname:"Mehedi",lname:"Hasan", age:30};
 let text ="";
@@ -86,7 +86,8 @@ text += person[x] + " " ;
 document.getElementById("demo").innerHTML=text;
 */
 
-//For in loop with array...
+//For in loop with array... for in loop is not recomanded for array
+/*
 const number =[2, 5, 7, 1, 6, 3, 9, 4];
 
 let text ="";
@@ -94,3 +95,12 @@ for (let x in number){
     let numSort=number.toSorted();
     console.log(numSort[x]);
 }
+*/
+
+//For OF loop with array... recomanded for array
+/*
+const number =[2, 5, 7, 1, 6, 3, 9, 4];
+for (let x of number){
+    console.log(x);
+}
+*/
