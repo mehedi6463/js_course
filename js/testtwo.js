@@ -66,3 +66,15 @@ fruits.set("Banana", 30);
 
 */
 //console.log(fruits);
+
+
+//bigint data type...
+/*
+let x = BigInt("1234567890123456789012345345678239345067867867867867867867867876868678768");
+
+document.getElementById("demo").innerHTML =  x;
+document.getElementById("demo1").innerHTML = typeof x; 
+
+let y = 1234567890123456;
+document.getElementById("demo2").innerHTML =  y;
+*/
