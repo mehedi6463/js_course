@@ -7,8 +7,8 @@
 // console.log(strGkl.toUpperCase());
 
 //while loop...
-let i = 10;
-let text="";
+// let i = 10;
+// let text="";
 /*
 while(i<10){
     text +="while number is " + i +" / ";
@@ -17,7 +17,6 @@ while(i<10){
 };
 console.log(text);
 */
-
 
 // do while loop...
 /*
