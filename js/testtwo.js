@@ -27,3 +27,42 @@ do{
 while (i < 10);
 console.log(text);
 */
+
+
+//Set Method ...
+// const mySet = new Set(['a','b', 'c', 'd']);
+// console.log(mySet);
+
+// set with foreach loop
+/*
+let text ="";
+mySet.forEach(
+    function (value){
+        text += value + " ";
+    }
+);
+console.log(text);
+*/
+
+//JavaScript Map method...you can use keys in map for any kind of datatype
+
+//map declearation way 1
+/*
+const fruits =new Map([
+    ["Mango", 50],
+    ["Orange", 60],
+    ["Apple", 100],
+    ["Banana", 40]
+]);
+*/
+
+//map declearation way 2 using set ();
+/*
+const fruits =new Map();
+fruits.set("Mango", 60);
+fruits.set("Orange", 80);
+fruits.set("Apple", 90);
+fruits.set("Banana", 30);
+
+*/
+//console.log(fruits);
