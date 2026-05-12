@@ -78,6 +78,7 @@ document.getElementById("demo1").innerHTML = typeof x;
 let y = 1234567890123456;
 document.getElementById("demo2").innerHTML =  y;
 */
+<<<<<<< HEAD
 
 let d = new Date();
 console.log(typeof d);
@@ -97,3 +98,9 @@ let {firstName, lastName, age} = person;
 // Display Primitive Values
 document.getElementById("demo").innerHTML =
 firstName + " " + lastName +" "+ age;
+=======
+const fruits = ['Apple', 'Banana', 'Cherry',1];
+let [x, y, z, c] = fruits;
+
+console.log(c);
+>>>>>>> 48de3c4e79b809e49dcd329d50c25a6a65b8684e
