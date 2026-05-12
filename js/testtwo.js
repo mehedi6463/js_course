@@ -78,3 +78,7 @@ document.getElementById("demo1").innerHTML = typeof x;
 let y = 1234567890123456;
 document.getElementById("demo2").innerHTML =  y;
 */
+const fruits = ['Apple', 'Banana', 'Cherry',1];
+let [x, y, z, c] = fruits;
+
+console.log(c);
