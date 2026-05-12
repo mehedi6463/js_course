@@ -78,3 +78,22 @@ document.getElementById("demo1").innerHTML = typeof x;
 let y = 1234567890123456;
 document.getElementById("demo2").innerHTML =  y;
 */
+
+let d = new Date();
+console.log(typeof d);
+
+
+// Destructuring:..
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50
+};
+
+// Destructuring
+let {firstName, lastName, age} = person;
+
+// Display Primitive Values
+document.getElementById("demo").innerHTML =
+firstName + " " + lastName +" "+ age;
