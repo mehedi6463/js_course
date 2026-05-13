@@ -78,12 +78,6 @@ document.getElementById("demo1").innerHTML = typeof x;
 let y = 1234567890123456;
 document.getElementById("demo2").innerHTML =  y;
 */
-<<<<<<< HEAD
-
-let d = new Date();
-console.log(typeof d);
-
-
 // Destructuring:..
 // Create an Object
 const person = {
@@ -98,9 +92,30 @@ let {firstName, lastName, age} = person;
 // Display Primitive Values
 document.getElementById("demo").innerHTML =
 firstName + " " + lastName +" "+ age;
-=======
-const fruits = ['Apple', 'Banana', 'Cherry',1];
-let [x, y, z, c] = fruits;
+// Destructuring:..
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50
+};
 
-console.log(c);
->>>>>>> 48de3c4e79b809e49dcd329d50c25a6a65b8684e
+// Destructuring
+//let {firstName, lastName, age} = person;
+
+// Display Primitive Values
+//document.getElementById("demo").innerHTML =
+//firstName + " " + lastName +" "+ age;
+
+//regular expression...
+//match method without flag like-i=incasesensitive ,g=global
+/*let text = "Visit W3Schools!"; 
+const myArr = text.match(/W3Schools/);
+document.getElementById("demo").innerHTML = myArr;*/
+
+//replace()
+/*
+let text = document.getElementById("demo").innerHTML;
+text = text.replace(/Microsoft/, "W3Schools");
+document.getElementById("demo").innerHTML = text;
+*/
