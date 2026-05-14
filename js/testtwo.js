@@ -80,25 +80,25 @@ document.getElementById("demo2").innerHTML =  y;
 */
 // Destructuring:..
 // Create an Object
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50
-};
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50
+// };
 
 // Destructuring
-let {firstName, lastName, age} = person;
+// let {firstName, lastName, age} = person;
 
 // Display Primitive Values
-document.getElementById("demo").innerHTML =
-firstName + " " + lastName +" "+ age;
+// document.getElementById("demo").innerHTML =
+// firstName + " " + lastName +" "+ age;
 // Destructuring:..
 // Create an Object
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50
-};
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50
+// };
 
 // Destructuring
 //let {firstName, lastName, age} = person;
@@ -119,3 +119,22 @@ let text = document.getElementById("demo").innerHTML;
 text = text.replace(/Microsoft/, "W3Schools");
 document.getElementById("demo").innerHTML = text;
 */
+//
+// let str ="Hello";
+// if (0>5) {
+//     str ="Peter";
+// }
+// console.log(str);
+
+// let test =1;
+//  test==2;
+
+// console.log(test);
+
+let babyAge =1;
+let isBirthDay =true;
+
+if (isBirthDay) {
+    let babyAge=2;
+}
+console.log(babyAge);
