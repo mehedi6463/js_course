@@ -131,10 +131,10 @@ document.getElementById("demo").innerHTML = text;
 
 // console.log(test);
 
-let babyAge =1;
-let isBirthDay =true;
+// let babyAge =1;
+// let isBirthDay =true;
 
-if (isBirthDay) {
-    let babyAge=2;
-}
-console.log(babyAge);
+// if (isBirthDay) {
+//     let babyAge=2;
+// }
+// console.log(babyAge);
