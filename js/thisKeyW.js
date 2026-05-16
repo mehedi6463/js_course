@@ -48,3 +48,14 @@ const person = {
 
 // console.log(myCar1.name +" - "+ myCar1.color +" - "+myCar1.year);
 // console.log(myCar2.name +" - "+ myCar1.color +" - "+myCar1.year);
+
+//JSON text formating
+// let text = '{"employees":[' +
+// '{"firstName":"John","lastName":"Doe" },' +
+// '{"firstName":"Anna","lastName":"Smith" },' +
+// '{"firstName":"Peter","lastName":"Jones" }]}';
+
+// const obj = JSON.parse(text);
+
+// document.getElementById("demo").innerHTML =
+// obj.employees[0].firstName + " " + obj.employees[2].lastName;
