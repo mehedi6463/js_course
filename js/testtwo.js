@@ -78,29 +78,7 @@ document.getElementById("demo1").innerHTML = typeof x;
 let y = 1234567890123456;
 document.getElementById("demo2").innerHTML =  y;
 */
-<<<<<<< HEAD
+// const fruits = ['Apple', 'Banana', 'Cherry',1];
+// let [x, y, z, c] = fruits;
 
-let d = new Date();
-console.log(typeof d);
-
-
-// Destructuring:..
-// Create an Object
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50
-};
-
-// Destructuring
-let {firstName, lastName, age} = person;
-
-// Display Primitive Values
-document.getElementById("demo").innerHTML =
-firstName + " " + lastName +" "+ age;
-=======
-const fruits = ['Apple', 'Banana', 'Cherry',1];
-let [x, y, z, c] = fruits;
-
-console.log(c);
->>>>>>> 48de3c4e79b809e49dcd329d50c25a6a65b8684e
+// console.log(c);
