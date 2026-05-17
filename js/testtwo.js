@@ -78,7 +78,70 @@ document.getElementById("demo1").innerHTML = typeof x;
 let y = 1234567890123456;
 document.getElementById("demo2").innerHTML =  y;
 */
+<<<<<<< HEAD
 // const fruits = ['Apple', 'Banana', 'Cherry',1];
 // let [x, y, z, c] = fruits;
 
 // console.log(c);
+=======
+// Destructuring:..
+// Create an Object
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50
+// };
+
+// Destructuring
+// let {firstName, lastName, age} = person;
+
+// Display Primitive Values
+// document.getElementById("demo").innerHTML =
+// firstName + " " + lastName +" "+ age;
+// Destructuring:..
+// Create an Object
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 50
+// };
+
+// Destructuring
+//let {firstName, lastName, age} = person;
+
+// Display Primitive Values
+//document.getElementById("demo").innerHTML =
+//firstName + " " + lastName +" "+ age;
+
+//regular expression...
+//match method without flag like-i=incasesensitive ,g=global
+/*let text = "Visit W3Schools!"; 
+const myArr = text.match(/W3Schools/);
+document.getElementById("demo").innerHTML = myArr;*/
+
+//replace()
+/*
+let text = document.getElementById("demo").innerHTML;
+text = text.replace(/Microsoft/, "W3Schools");
+document.getElementById("demo").innerHTML = text;
+*/
+//
+// let str ="Hello";
+// if (0>5) {
+//     str ="Peter";
+// }
+// console.log(str);
+
+// let test =1;
+//  test==2;
+
+// console.log(test);
+
+// let babyAge =1;
+// let isBirthDay =true;
+
+// if (isBirthDay) {
+//     let babyAge=2;
+// }
+// console.log(babyAge);
+>>>>>>> e491512b44b8496eb9107d3f5d26f3f31cf47280
