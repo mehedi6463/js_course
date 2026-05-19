@@ -144,4 +144,3 @@ document.getElementById("demo").innerHTML = text;
 //     let babyAge=2;
 // }
 // console.log(babyAge);
->>>>>>> e491512b44b8496eb9107d3f5d26f3f31cf47280

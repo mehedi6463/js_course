@@ -49,7 +49,7 @@ function countVowel(sentence) {
             }});
     return "Total counted vowel " + count;
 }
-console.log(countVowel("I Love Bangladesh and im Proun of my country"));
+console.log(countVowel("I Love Bangladesh and im Proud of my country"));
 */
 
 
