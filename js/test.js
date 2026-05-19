@@ -38,7 +38,20 @@ function myName(x,y) {
 // };
 // console.log(car.name);
 
- let text ="asdfg hjklo \"iuytrew\" qzxcvbnnm";
-//    document.getElementById("demo").innerHTML =text.length;
- console.log(text.length);
- console.log(text);
+//  let text ="asdfg hjklo \"iuytrew\" qzxcvbnnm";
+//  document.getElementById("demo").innerHTML =text.length;
+//  console.log(text.length);
+//  console.log(text);
+
+// function myFunction(a) {
+//     let text = 10;
+//     return a*text;
+//   }
+
+//     console.log(myFunction(2));
+
+function addFunction(a) {
+    let t = 10;
+    return t += a;   
+}
+console.log(addFunction(5));
