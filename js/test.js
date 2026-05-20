@@ -1,18 +1,18 @@
-function nameMy() {
-    document.getElementById('teste').innerHTML='test update';
+// function nameMy() {
+//     document.getElementById('teste').innerHTML='test update';
     
-}
+// }
 // function with parameter
-function sleepTime(nam, time) {
-    console.log(nam + " is sleeping from " + time);    
-}
-sleepTime("mahedi", "9pm");
-sleepTime("hasan", "12am");
+// function sleepTime(nam, time) {
+//     console.log(nam + " is sleeping from " + time);    
+// }
+// sleepTime("mahedi", "9pm");
+// sleepTime("hasan", "12am");
 
 // function with return
-function myName(x,y) {
-    return x+y;
-}
+// function myName(x,y) {
+//     return x+y;
+// }
 // let z=myName(3,6);
 // console.log(myName(3,8));
 // document.getElementById("demo").innerHTML=myName(3,8);
@@ -38,7 +38,7 @@ function myName(x,y) {
 // };
 // console.log(car.name);
 
- let text ="asdfg hjklo \"iuytrew\" qzxcvbnnm";
-//    document.getElementById("demo").innerHTML =text.length;
- console.log(text.length);
- console.log(text);
+//  let text ="asdfg hjklo \"iuytrew\" qzxcvbnnm";
+//  document.getElementById("demo").innerHTML =text.length;
+//  console.log(text.length);
+//  console.log(text);
