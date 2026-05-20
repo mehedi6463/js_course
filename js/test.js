@@ -41,9 +41,7 @@
 //  let text ="asdfg hjklo \"iuytrew\" qzxcvbnnm";
 //  document.getElementById("demo").innerHTML =text.length;
 //  console.log(text.length);
-<<<<<<< HEAD
 //  console.log(text);
-=======
 //  console.log(text);
 
 // function myFunction(a) {
@@ -58,4 +56,3 @@ function addFunction(a) {
     return t += a;   
 }
 console.log(addFunction(5));
->>>>>>> e9a82a78bbec937e16ab0f81310a82177dd3e45a
