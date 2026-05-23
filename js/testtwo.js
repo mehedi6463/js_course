@@ -78,12 +78,12 @@ document.getElementById("demo1").innerHTML = typeof x;
 let y = 1234567890123456;
 document.getElementById("demo2").innerHTML =  y;
 */
-<<<<<<< HEAD
+
 // const fruits = ['Apple', 'Banana', 'Cherry',1];
 // let [x, y, z, c] = fruits;
 
 // console.log(c);
-=======
+
 // Destructuring:..
 // Create an Object
 // const person = {

@@ -13,8 +13,16 @@ console.log(n);
 // document.getElementById("demo").innerHTML = myArr;
 
 //replace() method
-let text = "Visit W3Schools! w3Schools is good for lerner.";
-const tex = text.replace(/W3Schools/ig, "Microsoft");
+// let text = "Visit W3Schools! w3Schools is good for lerner.";
+// const tex = text.replace(/W3Schools/ig, "Microsoft");
 
-document.getElementById("demo").innerHTML = tex;
-console.log(tex);
+// document.getElementById("demo").innerHTML = tex;
+// console.log(tex);
+
+//object
+const person ={
+    name: "mehedi",
+    age: 30,
+    email:"mehedi@gmail.com"
+}
+console.log(person);
