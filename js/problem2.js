@@ -112,7 +112,43 @@ console.log(linearSearch(['a', 'b', 'c', 'd', 'o'], 'o'));
 // fizzBuzz(450);
 
 //remove false value in array
-// false, null, undefine, '', 0, NaN is false value in js
-const car =['BMW', '', 0, 'Volvo', NaN, undefined, 'RR'];
-const tureArray = car.filter(Boolean);
-console.log(tureArray);
+//false, null, undefine, '', 0, NaN is false value in js
+// const car =['BMW', '', 0, ' Volvo', NaN, undefined, ' RR', true];
+// const tureArray = car.filter(
+//     function (el) {
+//         if(el){
+//             return true;
+//         }else{
+//             return false;
+//         }
+        
+//     }
+// );
+// const tureArray = car.filter(Boolean);
+// console.log(tureArray);
+// document.getElementById("demo").innerHTML=tureArray;
+
+//find false valu from object
+const obj ={
+    a: "lws",
+    b: undefined,
+    c: "Learn JS",
+    d: false,
+    e: "apple",
+    g: 40,
+    h: NaN,
+    j: "thanks for learn"
+};
+
+const trueObject = function (obj) {
+    for (let i in obj) {
+        if(!obj[i]){
+            delete obj[i];
+        }
+    } 
+    return obj;
+};
+console.log(trueObject(obj));
+
+
+
