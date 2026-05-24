@@ -129,39 +129,24 @@ console.log(linearSearch(['a', 'b', 'c', 'd', 'o'], 'o'));
 // document.getElementById("demo").innerHTML=tureArray;
 
 //find false valu from object
-const aobj ={
+const obj ={
     a: "lws",
     b: undefined,
     c: "Learn JS",
     d: false,
     e: "apple",
-    f: "",
     g: 40,
     h: NaN,
     j: "thanks for learn"
 };
 
-// const trueObject = function (obj) {
-//     for (let i in obj) {
-//         if(!obj[i]){
-//             delete obj[i];
-//         }
-//     } 
-//     return obj;
-// };
-//console.log
-
-// const trueObj =function (a) {
-//     for (let i in a){
-//         if(!aobj[i]){
-//             delete aobj[i];
-//         }
-//     }
-//     return aobj;
-// }
-
-
-// console.log(trueObj(aobj));
-
-
+const trueObject = function (obj) {
+    for (let i in obj) {
+        if(!obj[i]){
+            delete obj[i];
+        }
+    } 
+    return obj;
+};
+console.log(trueObject(obj));
 
