@@ -1,6 +1,6 @@
 //problem-2-find how many times use "this" word and which is the first time position?
 
-const sentence ="This is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ut, nam lorem alias cum maiores velit aperiam repudiandae ipsa esse impedit soluta porro, magni cumque ratione debitis iusto do lorem dolorum necessitatibus atque? Tempora similique repudiandae aliquid reprehenderit cupiditate consequatur et, placeat tempore officia nam Lorem ipsa maiores nesciunt magnam voluptas distinctio.";
+// const sentence ="This is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ut, nam lorem alias cum maiores velit aperiam repudiandae ipsa esse impedit soluta porro, magni cumque ratione debitis iusto do lorem dolorum necessitatibus atque? Tempora similique repudiandae aliquid reprehenderit cupiditate consequatur et, placeat tempore officia nam Lorem ipsa maiores nesciunt magnam voluptas distinctio.";
 
 //find length with condition
 /*
@@ -129,24 +129,75 @@ console.log(linearSearch(['a', 'b', 'c', 'd', 'o'], 'o'));
 // document.getElementById("demo").innerHTML=tureArray;
 
 //find false valu from object
-const obj ={
-    a: "lws",
-    b: undefined,
-    c: "Learn JS",
-    d: false,
-    e: "apple",
-    g: 40,
-    h: NaN,
-    j: "thanks for learn"
+// const obj ={
+//     a: "lws",
+//     b: undefined,
+//     c: "Learn JS",
+//     d: false,
+//     e: "apple",
+//     g: 40,
+//     h: NaN,
+//     j: "thanks for learn"
+// };
+
+// const trueObject = function (obj) {
+//     for (let i in obj) {
+//         if(!obj[i]){
+//             delete obj[i];
+//         }
+//     } 
+//     return obj;
+// };
+// console.log(trueObject(obj));
+
+// const cup = {
+//     type: "Coffee",
+//     color: "black",
+//     status: "full",
+//     energy: 10,
+//     motivation: function() {
+//         if (this.energy === 100) {
+//             return 'ready to coding';
+//         }else{
+//             return 'need refill energy';
+//         }
+//     }
+// };
+
+// console.log(cup.motivation());
+
+//constructor function
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     this.greet = function() {
+//         return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+//     };
+
+// };
+
+// const person1 = new Person("Mehedi", 30);
+// const person2 = new Person("Hasan", 25);
+
+// console.log(person1.greet());
+// console.log(person2.greet());
+
+
+// ১. শুধু বেসিক প্রোপার্টিগুলো কনস্ট্রাক্টরে রাখবো
+function Student(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+// ২. কমন মেথড বা ফাংশনটি স্টুডেন্টের prototype-এ যোগ করে দেবো
+Student.prototype.school = function() {
+  console.log(this.name + " studies at ABC School.");
 };
 
-const trueObject = function (obj) {
-    for (let i in obj) {
-        if(!obj[i]){
-            delete obj[i];
-        }
-    } 
-    return obj;
-};
-console.log(trueObject(obj));
+// ৩. এখন অবজেক্ট তৈরি করি
+let student1 = new Student("Rahim", 15);
+let student2 = new Student("Karim", 16);
 
+// ৪. রান করে দেখি
+student1.school(); // আউটপুট: Rahim studies at ABC School.
+student2.school(); // আউটপুট: Karim studies at ABC School.
