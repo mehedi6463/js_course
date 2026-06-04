@@ -184,20 +184,40 @@ console.log(linearSearch(['a', 'b', 'c', 'd', 'o'], 'o'));
 
 
 // ১. শুধু বেসিক প্রোপার্টিগুলো কনস্ট্রাক্টরে রাখবো
-function Student(name, age) {
-  this.name = name;
-  this.age = age;
-}
+// function Student(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
 
 // ২. কমন মেথড বা ফাংশনটি স্টুডেন্টের prototype-এ যোগ করে দেবো
-Student.prototype.school = function() {
-  console.log(this.name + " studies at ABC School.");
-};
+// Student.prototype.school = function() {
+//   console.log(this.name + " studies at ABC School.");
+// };
 
 // ৩. এখন অবজেক্ট তৈরি করি
-let student1 = new Student("Rahim", 15);
-let student2 = new Student("Karim", 16);
+//let student1 = new Student("Rahim", 15);
+//let student2 = new Student("Karim", 16);
 
 // ৪. রান করে দেখি
-student1.school(); // আউটপুট: Rahim studies at ABC School.
-student2.school(); // আউটপুট: Karim studies at ABC School.
+//student1.school(); // আউটপুট: Rahim studies at ABC School.
+//student2.school(); // আউটপুট: Karim studies at ABC School.
+
+
+//constructor function with prototype
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+};
+
+const sakib = new Person("Sakib", 35);
+const tamim = new Person("Tamim", 34);
+
+Person.prototype.eat = function() {
+    return `${this.name} is eating.`;
+};
+
+Person.prototype.sleep = function() {
+    return `${this.name} is sleeping.`;
+};
+
+console.log(sakib.sleep());
