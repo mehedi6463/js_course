@@ -204,20 +204,21 @@ console.log(linearSearch(['a', 'b', 'c', 'd', 'o'], 'o'));
 
 
 //constructor function with prototype
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-};
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+// };
 
-const sakib = new Person("Sakib", 35);
-const tamim = new Person("Tamim", 34);
+// const sakib = new Person("Sakib", 35);
+// const tamim = new Person("Tamim", 34);
 
-Person.prototype.eat = function() {
-    return `${this.name} is eating.`;
-};
+// Person.prototype.eat = function() {
+//     return `${this.name} is eating.`;
+// };
 
-Person.prototype.sleep = function() {
-    return `${this.name} is sleeping.`;
-};
+// Person.prototype.sleep = function() {
+//     return `${this.name} is sleeping.`;
+// };
 
-console.log(sakib.sleep());
+// console.log(sakib.sleep());
+
