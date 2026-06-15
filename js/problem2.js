@@ -223,16 +223,42 @@ console.log(linearSearch(['a', 'b', 'c', 'd', 'o'], 'o'));
 // console.log(sakib.sleep());
 
 //JavaScript Object Iterables
-// const myArray = [1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14,15];
+// const myArray = [1, 2, 15];
 
 //regular for loop
 // for (let i=0; i <myArray.length; i++) {
 //     console.log(myArray[i]);
 // }
 
-//for of loop
-for (let i of myArray) {
-    if(i % 2 != 0){
-    console.log(i);
-}
-}
+//for of loop odd even number
+// for (let i of myArray) {
+//     if(i % 2 != 0){
+//     console.log(i);
+// }
+// }
+
+//iterable with Symbol.iterator and next() method
+// const numIterator = myArray[Symbol.iterator]();
+// console.log(numIterator.next());
+// console.log(numIterator.next());
+// console.log(numIterator.next());
+// console.log(numIterator.next());
+
+//make object iterable with Symbol.iterator and next() method
+// const myObject = {};
+
+// myObject[Symbol.iterator] = function () {
+//     let n = 0;
+//     done = false;
+//     return {
+//         next() {
+//             n += 50;
+//             if (n === 500) {done = true;};
+//             return {value: n, done: done};
+//         }
+//     }
+// }
+// for (let num of myObject) {
+//     console.log(num);
+// }
+
