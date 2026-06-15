@@ -51,8 +51,45 @@
 
 //     console.log(myFunction(2));
 
-function addFunction(a) {
-    let t = 10;
-    return t += a;   
+// function addFunction(a) {
+//     let t = 10;
+//     return t += a;   
+// }
+// console.log(addFunction(5));
+
+//--set method
+
+// --Create a Set
+// const letters = new Set(["a","b","c",0, 9]);
+
+// letters.add(11);
+// letters.add(13);
+
+//-- List all Elements
+// let text = "";
+// for (const x of letters) {
+//   text += x + "<br>";
+// }
+// console.log(letters.size);
+// document.getElementById("demo").innerHTML = text;
+
+// const myset= new Set(["a","b","c",0, 9]);
+
+// let sets = "";
+// for(let s of myset){
+//     sets += s + "<br>";
+// }
+// console.log(sets);
+// document.getElementById("demo").innerHTML = sets;
+
+//map() method 
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+let result = "";
+for (let n of fruits) {
+    result += n + "<br>";
 }
-console.log(addFunction(5));
+document.getElementById("demo").innerHTML = result + "<br>";
