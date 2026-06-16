@@ -83,13 +83,56 @@
 // document.getElementById("demo").innerHTML = sets;
 
 //map() method 
-const fruits = new Map([
-  ["apples", 500],
-  ["bananas", 300],
-  ["oranges", 200]
-]);
-let result = "";
-for (let n of fruits) {
-    result += n + "<br>";
-}
-document.getElementById("demo").innerHTML = result + "<br>";
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200]
+// ]);
+// let result = "";
+// for (let n of fruits) {
+//     result += n + "<br>";
+// }
+// document.getElementById("demo").innerHTML = result + "<br>";
+
+//Function
+// let x= 10;
+// function test(){
+//   console.log(x);
+// }
+// test();
+
+//self invoking function also called immediately invoked function expression (IIFE)
+// (function (){
+//     console.log("this is self invoking function");
+//   }
+// )();
+
+// let c = {greeting: 'hello'};
+// let d=c;
+// c.greeting='hi';
+
+// console.log(c.greeting);
+
+// function bark(){
+//   console.log('woof!');
+// }
+// bark.animal = 'dog'; //out put nothing
+
+// const shape = {
+//   radius: 10,
+//   diameter() {
+//     return this.radius * 2;
+//   },
+//   perimeter: () => 2 * Math.PI * this.radius};
+// console.log(shape.diameter());
+// console.log(shape.perimeter());
+
+const inventor = {
+  facebook : "Mark Zuckerberg",
+  spaceX : "Elon Musk",
+  microsoft : "Bill Gates"
+};
+const a= "spaceX";
+
+console.log(inventor['spaceX']);
+console.log(inventor[a]);
