@@ -20,19 +20,74 @@
 // car1.showDetails(); // আউটপুট: এটি একটি Toyota কোম্পানির Corolla মডেলের গাড়ি।
 // car2.showDetails(); // আউটপুট: এটি একটি BMW কোম্পানির X5 মডেলের গাড়ি।
 
-class car {
-    constructor(name, color, year) {
-        this.name = name;
-        this.year = year;
-        this.color = color;
+// class car {
+//     constructor(name, color, year) {
+//         this.name = name;
+//         this.year = year;
+//         this.color = color;
         
-    }
-    run(speed){
-        console.log(this.name + " color is " + this.color + " and speed is " + speed);
-    }
-}
-let BMW = new car('BMW', 'Red', 1999);
-let Audi = new car('Audi', 'blue', 1990);
+//     }
+//     run(speed){
+//         console.log(this.name + " color is " + this.color + " and speed is " + speed);
+//     }
+// }
+// let BMW = new car('BMW', 'Red', 1999);
+// let Audi = new car('Audi', 'blue', 1990);
 
-BMW.run('100 per km');
-Audi.run('110 per km');
+// BMW.run('100 per km');
+// Audi.run('110 per km');
+
+
+/* JavaScript Class Inheritance
+
+.
+.
+.
+.
+.
+*/
+
+//js asyncronus with calback function
+// console.log("--- ঘড়ি চালু হচ্ছে ---");
+
+// // প্রতি ১ সেকেন্ড পর পর এই অ্যাসিনক্রোনাস কাজটা চলতে থাকবে
+// setInterval(() => {
+//     const time = new Date().toLocaleTimeString();
+//     console.log(`বর্তমান সময়: ${time}`);
+// }, 1000);
+
+// console.log("ঘড়ি ব্যাকগ্রাউন্ডে চলছে, তুমি এখন চাইলে নিচের অন্য কাজগুলো করতে পারো!");
+
+// ১. মেইন ফাংশন যা নাম নেবে এবং একটি কলব্যাক ফাংশন নেবে
+// function processUser(name, callback) {
+//     console.log("১. ইউজার প্রসেস করা হচ্ছে...");
+//     callback(name); // এখানে আমরা পাস করা ফাংশনটিকে রান করছি
+// }
+
+// // ২. আমাদের কলব্যাক ফাংশন (যা শুভেচ্ছা জানাবে)
+// function sayHello(userName) {
+//     console.log(`২. হ্যালো ${userName}! আপনাকে স্বাগতম।`);
+// }
+
+// // ৩. প্র্যাকটিস রান
+// processUser("Abir", sayHello);
+
+// ১. মেইন ফাংশন যা ব্যাকগ্রাউন্ডে কাজ করবে
+// function orderFood(foodItem, callback) {
+//     console.log(`১. ${foodItem} অর্ডার নেওয়া হয়েছে। রান্না শুরু হলো...`);
+
+//     // ধরি রান্না হতে ৩ সেকেন্ড লাগবে (Asynchronous Delay)
+//     setTimeout(() => {
+//         console.log(`২. রান্না শেষ!`);
+//         callback(foodItem); // কাজ শেষ, এবার বেল বাজানো (কলব্যাক রান) হলো
+//     }, 5000);
+// }
+
+// // ২. আমাদের কলব্যাক ফাংশন (যা ডেলিভারি করবে)
+// function deliverFood(item) {
+//     console.log(`৪. আপনার গরম গরম ${item} টেবিলে হাজির! এনজয় করুন।`);
+// }
+
+// // ৩. প্র্যাকটিস রান
+// orderFood("Burger", deliverFood);
+// console.log("৩. খাবার টেবিলে আসার আগেই আমি ফোনে ফেসবুক স্ক্রল করছি...");
