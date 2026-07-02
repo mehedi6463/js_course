@@ -91,3 +91,9 @@
 // // ৩. প্র্যাকটিস রান
 // orderFood("Burger", deliverFood);
 // console.log("৩. খাবার টেবিলে আসার আগেই আমি ফোনে ফেসবুক স্ক্রল করছি...");
+
+// Asynchronous Programming
+setTimeout(myFunction, 2000)
+function myFunction(){
+document.getElementById("demo").innerHTML="hi this is the setimeout callback function";
+}
