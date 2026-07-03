@@ -93,7 +93,65 @@
 // console.log("৩. খাবার টেবিলে আসার আগেই আমি ফোনে ফেসবুক স্ক্রল করছি...");
 
 // Asynchronous Programming
-setTimeout(myFunction, 2000)
-function myFunction(){
-document.getElementById("demo").innerHTML="hi this is the setimeout callback function";
+// setTimeout(myFunction, 2000)
+// function myFunction(){
+// document.getElementById("demo").innerHTML="hi this is the setimeout callback function";
+// }
+// console.log="hello";
+// //callback function pattern
+// function calculator(x,y, oparation){
+//     return oparation (x,y);
+
+// }
+// //add function
+// function add(x,y) {
+//     return x+y;
+    
+// }
+// let result =calculator(4,9, add);
+// console.log=result;
+// document.getElementById("demo").innerHTML = "hi";
+
+//call back function pattern -payment, enrool ,certificate
+
+const paymentSuccess= true;
+const marks=70;
+
+function enroll(callback) {
+    console.log(`Course Enrollment is Processing...`);
+
+    setTimeout(
+        function () {
+            if (paymentSuccess) {
+                callback();                
+            }else{
+                console.log(`Payment Faild..!`);
+            }            
+        }, 2500);
 }
+
+function course(callback){
+    console.log(`Course on perogrerss`);
+    setTimeout(
+        function() {
+            if (marks >= 70) {
+               callback();
+            }else{
+                console.log(`Youe not Eliable to get certificate.!`);
+            }     
+        }, 2000 );
+}
+
+function certificate() {
+    console.log (`Please wait to get your Certificate`);
+
+    setTimeout(function() {
+        console.log(`Congratulation ...!`);
+    }, 3000);
+    
+}
+
+enroll(function(){
+    course(certificate);
+});
+
