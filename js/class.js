@@ -155,64 +155,121 @@
 //     course(certificate);
 // });
 
-//Promise programm
+//Promise constructor with asyncronise 
+// const payments = true;
+// const marks = 90;
 
+// function enroll(){
+//     console.log('Course enrollment processing..');
 
-const payments = true;
+//     const promise = new Promise(function(resolve, reject){
+//        setTimeout(function(){
+//          if (payments) {
+//             resolve();
+//         }else{
+//             reject('Sorry, Pay for Access..!');
+//         }
+//        }, 2000);
+//     });
+//     return promise;
+// }
+
+// function progress() {
+//     console.log('Enrollment Successfull, Course progress..!');
+
+//     const promise = new Promise(function(resolve, reject) {
+//         setTimeout(function() {
+//             if (marks >= 80) {
+//                 resolve();
+//             }else{
+//                 reject('You are not eligible for certificate..!')
+//             }
+            
+//         }, 2500);
+        
+//     });
+//     return promise;
+    
+// }
+
+// function certificate() {
+//     console.log('Preparign your certificate..!');
+
+//     const promise = new Promise(function(resolve){
+//         setTimeout(function() {
+//             resolve('Claim Your Achivment..!');
+//         }, 3000);
+
+//     });
+//     return promise;
+    
+// }
+
+// enroll()
+// .then(progress)
+// .then(certificate)
+// .then((value)=>{
+//     console.log(value)
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+
+const payment = false;
 const marks = 90;
 
-function enroll(){
-    console.log('Course enrollment processing..');
+function enrollStud(){
+    console.log('Enroll is processing');
+    
+    const promise = new Promise(function(resolve, reject){
+        setTimeout(function() {
+                if(payment){
+                    resolve();
+                }else{
+                    reject('Payment faild. Please Try Again.');
+                }
+        }, 1500);
+    });
+    return promise;
+};
+function progress(){
+    console.log('Enroll Successful.! Course Progress..');
 
     const promise = new Promise(function(resolve, reject){
-       setTimeout(function(){
-         if (payments) {
-            resolve();
-        }else{
-            reject('Sorry, Pay for Access..!');
-        }
-       }, 2000);
-    });
-    return promise;
-}
-
-function progress() {
-    console.log('Enrollment Successfull, Course progress..!');
-
-    const promise = new Promise(function(resolve, reject) {
-        setTimeout(function() {
-            if (marks >= 80) {
-                resolve();
+        setTimeout(function(){
+            if (marks >= 70) {
+                resolve ('');
             }else{
-                reject('You are not eligible for certificate..!')
+                reject('You are not elegible for certificate..! Try again..!');
             }
-            
-        }, 2500);
-        
+        }, 2000);
+
     });
     return promise;
-    
-}
-
-function certificate() {
-    console.log('Preparign your certificate..!');
+};
+function certificate(){
+    console.log('Prepearing Your Certificate..!');
 
     const promise = new Promise(function(resolve){
-        setTimeout(function() {
-            resolve('Claim Your Achivment..!');
-        }, 3000);
-
+        setTimeout(function(){
+           resolve('Congratulation..! Claim Your Certificate..!');
+        }, 2500);
     });
     return promise;
-    
+};
+
+
+async function course(){
+    try {
+        await enrollStud();
+        await progress();
+        const mssg = await certificate();
+        console.log(mssg);
+    } catch (error) {
+        console.log(error);   
+    }
 }
 
-enroll()
-.then(progress)
-.then(certificate)
-.then((value)=>{
-    console.log(value)
-})
-.catch((err)=>{
-    console.log(err);
-})
+course();
+
+// console.log('hi');
