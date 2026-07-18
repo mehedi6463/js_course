@@ -272,4 +272,5 @@ async function course(){
 
 course();
 
-// console.log('hi');
+// // console.log('hi');
+// console.log(document.title="DOM");
