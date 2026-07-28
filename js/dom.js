@@ -35,24 +35,56 @@
 //     }
 
 //JS Dubble click events
-const button = document.getElementById('button');
-let clickTimer = null;
+// const button = document.getElementById('button');
+// let clickTimer = null;
 
-// Single Click Handler
-button.addEventListener('click', function () {
-    // আগের কোনো টাইমার থাকলে তা ক্লিয়ার করবে যাতে ডাবল ক্লিক হলে সিঙ্গেল ক্লিক রান না হয়
-    clearTimeout(clickTimer);
+// // Single Click Handler
+// button.addEventListener('click', function () {
+//     // আগের কোনো টাইমার থাকলে তা ক্লিয়ার করবে যাতে ডাবল ক্লিক হলে সিঙ্গেল ক্লিক রান না হয়
+//     clearTimeout(clickTimer);
 
-    // ২০০-৩০০ মিলিসেকেন্ড অপেক্ষা করবে ডাবল ক্লিক হচ্ছে কিনা দেখার জন্য
-    clickTimer = setTimeout(() => {
-      button.innerHTML = "Done";
-    }, 50); // 250ms delay
+//     // ২০০-৩০০ মিলিসেকেন্ড অপেক্ষা করবে ডাবল ক্লিক হচ্ছে কিনা দেখার জন্য
+//     clickTimer = setTimeout(() => {
+//       button.innerHTML = "Done";
+//     }, 50); // 250ms delay
+// });
+
+// // Double Click Handler
+// button.addEventListener('dblclick', function () {
+//     // ডাবল ক্লিক হওয়া মাত্রই সিঙ্গেল ক্লিকের টাইমার থামিয়ে দেবে
+//     clearTimeout(clickTimer);
+
+//     button.innerHTML = "close!";
+// });
+
+//onmouse over change text
+// let buttonText = document.querySelector('#button');
+// buttonText.onclick = function () {    
+//     buttonText.innerHTML="Hi Mehedi";
+// } 
+
+
+// function butonTxt() {
+//     document.getElementById('button').innerHTML="HI Hasan";
+// }
+
+
+//add event listener
+// document.getElementById('button').addEventListener("mouseover" , 
+//     function(){
+//         alert("hi..................");
+//     }
+// );
+
+//addEventlistener with function parameter
+
+let p = 7;
+let q = 7;
+
+document.getElementById("button").addEventListener("click", function() {
+  myFunction(p, q);
 });
 
-// Double Click Handler
-button.addEventListener('dblclick', function () {
-    // ডাবল ক্লিক হওয়া মাত্রই সিঙ্গেল ক্লিকের টাইমার থামিয়ে দেবে
-    clearTimeout(clickTimer);
-
-    button.innerHTML = "close!";
-});
+function myFunction(a, b) {
+  document.getElementById("button").innerHTML = a * b;
+}
