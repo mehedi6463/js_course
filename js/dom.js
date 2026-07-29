@@ -57,7 +57,7 @@
 //     button.innerHTML = "close!";
 // });
 
-//onmouse over change text
+//onclick over change text
 // let buttonText = document.querySelector('#button');
 // buttonText.onclick = function () {    
 //     buttonText.innerHTML="Hi Mehedi";
@@ -78,13 +78,49 @@
 
 //addEventlistener with function parameter
 
-let p = 7;
-let q = 7;
+// let p = 7;
+// let q = 7;
 
-document.getElementById("button").addEventListener("click", function() {
-  myFunction(p, q);
-});
+// document.getElementById("button").addEventListener("click", function() {
+//   myFunction(p, q);
+// });
 
-function myFunction(a, b) {
-  document.getElementById("button").innerHTML = a * b;
+// function myFunction(a, b) {
+//   document.getElementById("button").innerHTML = a * b;
+// }
+
+//node create and appnedChild
+// document.getElementById("button").addEventListener("click",
+//   function () {
+//     const pTag = document.createElement("p");
+//     const inerText = document.createTextNode("Type Here..");
+
+//     const fullTag = pTag.appendChild(inerText); //<p>Type Here..</p>
+
+//     const element = document.getElementById("divOne");
+//     element.appendChild(fullTag);
+    
+//   }
+// )
+
+
+//node create and before after
+// document.getElementById("button").addEventListener("click",
+//   function (){
+//         const pTag = document.createElement("p");
+//     const inerText = document.createTextNode("Type Here..");
+
+//     const fullTag = pTag.appendChild(inerText); //<p>Type Here..</p>
+
+//     const element = document.getElementById("divOne");
+//     const child = document.getElementById("p1");
+
+//     element.insertBefore(pTag, child);
+//   }
+// )
+
+//dom collection ByTagName
+const myCollection = document.getElementsByTagName('p');
+for (let i = 0; i < myCollection.length; i++) {
+  myCollection[i].style.color = "red";
 }
