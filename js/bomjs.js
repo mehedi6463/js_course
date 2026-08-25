@@ -17,34 +17,61 @@ let myWind;
 // }
 
 //select for showing massage
-const clickFor =document.getElementById("p3");
-const clickProm =document.getElementById("p4");
+// const clickFor =document.getElementById("p3");
+// const clickProm =document.getElementById("p4");
 
-//popup alert box
-function windAlert() {
-    alert('Window Alert is working');
+// //popup alert box
+// function windAlert() {
+//     alert('Window Alert is working');
+// }
+
+// function windConfirm() {
+//     let txt;
+//     if (confirm("Press ok for confirm")) {
+//         txt = "Done..!";
+//     }else{
+//         txt = "Cancled..!";
+//     }
+//     clickFor.innerHTML=txt;
+    
+// }
+
+// function windPrompt() {
+//     let person = prompt("enter your name:" , "Jhon");
+//     let txt;
+
+//     if (person === null || person === "") {
+//         txt = "No input";
+//     }else{
+//         txt ="Hello Mr." + person + " welcome";
+//     }
+//     clickProm.innerHTML= txt ;
+    
+// }
+
+//timing events
+const timeout =document.getElementById("p7")
+const intervel =document.getElementById("p8")
+
+let timeoutText;
+let intervelText;
+
+// function setTimier() {
+//     timeoutText = setTimeout(() => {
+//         timeout.innerHTML="5 seconds over.!";        
+//     }, 5000);
+// }
+
+// function stopTimier() {
+//    clearTimeout(timeoutText);
+// }
+
+function startIntervel() {
+    intervelText = setIntervel(function(){
+        intervel.innerHTML= new Date().toLocaleTimeString();        
+    }, 1000);
 }
 
-function windConfirm() {
-    let txt;
-    if (confirm("Press ok for confirm")) {
-        txt = "Done..!";
-    }else{
-        txt = "Cancled..!";
-    }
-    clickFor.innerHTML=txt;
-    
-}
-
-function windPrompt() {
-    let person = prompt("enter your name:" , "Jhon");
-    let txt;
-
-    if (person === null || person === "") {
-        txt = "No input";
-    }else{
-        txt ="Hello Mr." + person + " welcome";
-    }
-    clickProm.innerHTML= txt ;
-    
+function stopIntervel() {
+   clearInterval(intervelText);
 }
