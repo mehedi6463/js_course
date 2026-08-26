@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Object Model</title>
+    <title>JavaScript</title>
     <style>
         #yellow{
             width: 400px;
@@ -23,6 +23,12 @@
         }
         button{
             margin: 10px 0px;
+        }
+        h2{
+            color: red;
+            font-size: 30px;
+            padding: 10px 0px;
+
         }
     </style>
 </head>
@@ -44,8 +50,8 @@
     
 
     <div id="divOne">
-        <p id="p1">Hello</p>
-        <p id="p2">JavaScript</p>
+        <!-- <p id="p1">Hello</p> -->
+        <h2 id="p2">JavaScript</h2>
     </div>
 <!-- 
     <input type="button" value="open window" onclick="openWind()">
@@ -71,13 +77,28 @@
     <br>
     <input type="button" value="Stop Timier" onclick="stopTimier()">
     <p id="p6"></p> -->
-    <p id="p7"></p>
-    <input type="button" value="Set Intervel" onclick="startIntervel()">
+    <!-- <p id="p7"></p> -->
+    <!-- <input type="button" value="Set Intervel" onclick="startIntervel()">
+    <br> -->
+    
+    <!-- <br>
+    <input type="button" value="Stop Intervel" onclick="stopIntervel()"> -->
+    
+    <input type="button" value="Set Name" onclick="setCookieName()">
+    <br>
+    <br>
+
+    <input type="button" value="Set User Name" onclick="setCookieUname()">
+    <br>
     <br>
     
+    <input type="button" value="Get Name" onclick="gerCookieName()">
     <br>
-    <input type="button" value="Stop Intervel" onclick="stopIntervel()">
-    <p id="p8"></p>
+    <br>
+
+    <input type="button" value="Get User Name" onclick="gerCookieUname()">
+    <br>
+    <p id="p8">Result</p>
     <script src="./js/dom.js"></script>
     <script src="./js/bomjs.js"></script>
 </body>

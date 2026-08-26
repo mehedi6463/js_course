@@ -50,28 +50,45 @@ let myWind;
 // }
 
 //timing events
-const timeout =document.getElementById("p7")
-const intervel =document.getElementById("p8")
+// const timeout =document.getElementById("p7")
+// const intervel =document.getElementById("p7");
+const cookies =document.getElementById("p7");
 
-let timeoutText;
+// let timeoutText;
 let intervelText;
 
 // function setTimier() {
-//     timeoutText = setTimeout(() => {
-//         timeout.innerHTML="5 seconds over.!";        
-//     }, 5000);
+//    timeoutText = setTimeout(() => {
+//    timeout.innerHTML="5 seconds over.!";        
+//  }, 5000);
 // }
 
-// function stopTimier() {
-//    clearTimeout(timeoutText);
+// // function stopTimier() {
+// //    clearTimeout(timeoutText);
+// // }
+
+// function startIntervel() {
+//     intervelText = setInterval(function(){
+//         intervel.innerHTML= new Date().toLocaleTimeString();        
+//     }, 1000);
 // }
 
-function startIntervel() {
-    intervelText = setIntervel(function(){
-        intervel.innerHTML= new Date().toLocaleTimeString();        
-    }, 1000);
-}
+// function stopIntervel() {
+//    clearInterval(intervelText);
+// }
 
-function stopIntervel() {
-   clearInterval(intervelText);
-}
+// function showTime() {
+// setInterval(showTime, 1000);
+//   const date = new Date();
+//   myDisplayer(date.toLocaleTimeString());
+// }
+
+// // Function to display any text
+// function myDisplayer(text) {
+//   let demo = document.getElementById("p7"); 
+//   demo.innerHTML = text;
+// }
+
+// cookies is store info from user browser
+
+
