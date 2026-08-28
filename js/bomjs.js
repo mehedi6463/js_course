@@ -52,10 +52,10 @@ let myWind;
 //timing events
 // const timeout =document.getElementById("p7")
 // const intervel =document.getElementById("p7");
-const cookies =document.getElementById("p7");
+// const cookies =document.getElementById("p7");
 
 // let timeoutText;
-let intervelText;
+// let intervelText;
 
 // function setTimier() {
 //    timeoutText = setTimeout(() => {
@@ -63,9 +63,9 @@ let intervelText;
 //  }, 5000);
 // }
 
-// // function stopTimier() {
-// //    clearTimeout(timeoutText);
-// // }
+// function stopTimier() {
+//   clearTimeout(timeoutText);
+// }
 
 // function startIntervel() {
 //     intervelText = setInterval(function(){
@@ -83,12 +83,81 @@ let intervelText;
 //   myDisplayer(date.toLocaleTimeString());
 // }
 
-// // Function to display any text
+// Function to display any text
 // function myDisplayer(text) {
 //   let demo = document.getElementById("p7"); 
 //   demo.innerHTML = text;
 // }
 
 // cookies is store info from user browser
+
+// ১. কুকি সেভ বা তৈরি করার ফাংশন
+// function saveName() {
+//     let user = document.getElementById("nameInput").value;
+//     if (user === "") {
+//         alert("দয়া করে একটি নাম লিখুন!");
+//         return;
+//     }
+//     // 'username' নামে কুকি তৈরি (মেয়াদ ৭ দিন)
+//     let d = new Date();
+//     d.setTime(d.getTime() + (7 * 24 * 60 * 60 * 1000));
+//     document.cookie = "username=" + user + "; expires=" + d.toUTCString() + "; path=/";
+    
+//     document.getElementById("result").innerText = "কুকি সেভ হয়েছে!";
+// }
+
+// // ২. কুকি পড়ে দেখানোর ফাংশন
+// function showName() {
+//     let allCookies = document.cookie;
+//     if (allCookies === "") {
+//         document.getElementById("result").innerText = "কোনো কুকি পাওয়া যায়নি!";
+//     } else {
+//         document.getElementById("result").innerText = "জমাকৃত কুকি: " + allCookies;
+//     }
+// }
+
+// // ৩. কুকি মুছে ফেলার ফাংশন
+// function deleteName() {
+//     // অতীত তারিখ সেট করে কুকি ডিলিট করা
+//     document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+//     document.getElementById("result").innerText = "কুকি মুছে ফেলা হয়েছে!";
+// }
+
+// **form validation
+
+// const inputValue =document.getElementById("id01");
+// inputValue.style.width="110px" ;
+// inputValue.style.border="solid red 2px" ;
+    
+function validaTion() {
+    const inputValue =document.getElementById("id01");
+
+    //**default validation condition**
+    // if (!inputValue.checkValidity()) {
+    //     document.getElementById("result").innerHTML= inputValue.validationMessage;}
+    //     else{
+    //         document.getElementById("result").innerHTML= "Data Submited";
+    //     }
+
+    //Custion validation condition 
+    if (inputValue.validity.rangeOverflow) {
+        inputValue.setCustomValidity("Number Should below or equal 500");
+        
+    }else if(inputValue.validity.rangeUnderflow){
+        inputValue.setCustomValidity("Number Should above or equal 100");
+
+    }else if(inputValue.validity.valueMissing){
+        inputValue.setCustomValidity("Enter the Number please..!");
+
+    }
+    
+
+    if (!inputValue.checkValidity()) {
+        document.getElementById("result").innerHTML= inputValue.validationMessage;
+    }
+    
+}
+
+
 
 

@@ -84,7 +84,7 @@
     <!-- <br>
     <input type="button" value="Stop Intervel" onclick="stopIntervel()"> -->
     
-    <input type="button" value="Set Name" onclick="setCookieName()">
+    <!-- <input type="button" value="Set Name" onclick="setCookieName()">
     <br>
     <br>
 
@@ -99,6 +99,26 @@
     <input type="button" value="Get User Name" onclick="gerCookieUname()">
     <br>
     <p id="p8">Result</p>
+    -->
+
+    <!-- ইউজার ইনপুট Field -->
+    <input type="text" id="nameInput" placeholder="আপনার নাম লিখুন">
+    <br>
+    <!-- Action Buttons -->
+    <button onclick="saveName()">কুকি সেভ করুন (Set)</button>
+    <br><br>
+    <button onclick="showName()">কুকি দেখুন (Read)</button>
+    <br><br>
+    <button onclick="deleteName()">কুকি মুছুন (Delete)</button>
+
+    <!-- আউটপুট দেখানোর জায়গা -->
+    <h3 id="result"></h3>
+
+    <!--Js Validation-->
+    <input type="number" id="id01" min="100" max="500" required placeholder="Number.!">
+    <button onclick="validaTion()">Validate</button>
+
+
     <script src="./js/dom.js"></script>
     <script src="./js/bomjs.js"></script>
 </body>
