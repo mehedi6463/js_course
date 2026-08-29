@@ -159,32 +159,54 @@ let myWind;
 // }
 
 //worker object
-let w;
+// let w;
 
-function startWorker() {
-    if (typeof Worker !== "undefined") {
-        // worker available
+// function startWorker() {
+//     if (typeof Worker !== "undefined") {
+//         // worker available
 
-        // if w worker is not already defined
-        if (typeof w == "undefined") {
-            // create a new worker called 'w'
-            w = new Worker("worker.js");
-        }
+//         // if w worker is not already defined
+//         if (typeof w == "undefined") {
+//             // create a new worker called 'w'
+//             w = new Worker("worker.js");
+//         }
 
-        // listening for worker events/messages
-        w.onmessage = function (event) {
-            document.getElementById("demo").innerHTML = event.data;
-        };
-    } else {
-        alert("Your browser does not support web worker!");
-    }
-}
+//         // listening for worker events/messages
+//         w.onmessage = function (event) {
+//             document.getElementById("demo009").innerHTML = event.data;
+//         };
+//     } else {
+//         alert("Your browser does not support web worker!");
+//     }
+// }
 
-function stopWorker() {
-    if (typeof Worker !== "undefined") {
-        w.terminate();
-        w = undefined;
-    } else {
-        alert("Your browser does not support web worker!");
-    }
+// function stopWorker() {
+//     if (typeof Worker !== "undefined") {
+//         w.terminate();
+//         w = undefined;
+//     } else {
+//         alert("Your browser does not support web worker!");
+//     }
+// }
+
+//fetch data
+const display =document.getElementById('p9');
+
+//fatching data to normal way 
+// function fatchData() {
+//     fetch("http://127.0.0.1:5500/data.txt")
+//     .then((res)=> res.text())
+//     .then((data)=>{
+//         display.innerText =data;
+//     });    
+    
+// }
+
+//fatching data with asyc -await
+async function fatchData() {
+    const result = await fetch("http://127.0.0.1:5500/data.txt");
+    const data = await result.text();
+
+    display.innerText= data;
+    
 }
