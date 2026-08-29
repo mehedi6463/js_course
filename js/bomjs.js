@@ -129,8 +129,8 @@ let myWind;
 // inputValue.style.width="110px" ;
 // inputValue.style.border="solid red 2px" ;
     
-function validaTion() {
-    const inputValue =document.getElementById("id01");
+// function validaTion() {
+// const inputValue =document.getElementById("id01");
 
     //**default validation condition**
     // if (!inputValue.checkValidity()) {
@@ -140,24 +140,51 @@ function validaTion() {
     //     }
 
     //Custion validation condition 
-    if (inputValue.validity.rangeOverflow) {
-        inputValue.setCustomValidity("Number Should below or equal 500");
+//     if (inputValue.validity.rangeOverflow) {
+//         inputValue.setCustomValidity("Number Should below or equal 500");
         
-    }else if(inputValue.validity.rangeUnderflow){
-        inputValue.setCustomValidity("Number Should above or equal 100");
+//     }else if(inputValue.validity.rangeUnderflow){
+//         inputValue.setCustomValidity("Number Should above or equal 100");
 
-    }else if(inputValue.validity.valueMissing){
-        inputValue.setCustomValidity("Enter the Number please..!");
+//     }else if(inputValue.validity.valueMissing){
+//         inputValue.setCustomValidity("Enter the Number please..!");
 
-    }
+//     }
     
 
-    if (!inputValue.checkValidity()) {
-        document.getElementById("result").innerHTML= inputValue.validationMessage;
-    }
+//     if (!inputValue.checkValidity()) {
+//         document.getElementById("result").innerHTML= inputValue.validationMessage;
+//     }
     
+// }
+
+//worker object
+let w;
+
+function startWorker() {
+    if (typeof Worker !== "undefined") {
+        // worker available
+
+        // if w worker is not already defined
+        if (typeof w == "undefined") {
+            // create a new worker called 'w'
+            w = new Worker("worker.js");
+        }
+
+        // listening for worker events/messages
+        w.onmessage = function (event) {
+            document.getElementById("demo").innerHTML = event.data;
+        };
+    } else {
+        alert("Your browser does not support web worker!");
+    }
 }
 
-
-
-
+function stopWorker() {
+    if (typeof Worker !== "undefined") {
+        w.terminate();
+        w = undefined;
+    } else {
+        alert("Your browser does not support web worker!");
+    }
+}
