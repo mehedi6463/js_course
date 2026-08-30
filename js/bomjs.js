@@ -192,7 +192,7 @@ let myWind;
 //fetch data
 const display =document.getElementById('p9');
 
-//fatching data to normal way 
+//fatching data to promising way in fatch api
 // function fatchData() {
 //     fetch("http://127.0.0.1:5500/data.txt")
 //     .then((res)=> res.text())
@@ -202,11 +202,44 @@ const display =document.getElementById('p9');
     
 // }
 
-//fatching data with asyc -await
-async function fatchData() {
-    const result = await fetch("http://127.0.0.1:5500/data.txt");
-    const data = await result.text();
+//fatching data with asyc -await 
+// async function fatchData() {
+//     const result = await fetch("http://127.0.0.1:5500/data.txt");
+//     const data = await result.text();
 
-    display.innerText= data;
+//     display.innerText= data;
     
+// }
+
+
+// Geoloaction API
+function  getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(showPosition, showError);
+        
+    }else{
+        display.innerHTML="Location not avilable";
+    }    
 }
+
+function showPosition(position) {
+   display.innerHTML="Latitude:" + position.coords.latitude + "<br> Longitude" + position.coords.longitude;
+}
+
+function showError(error) {
+    switch (error.code) {
+        case error.PERMISSION_DENIED:
+            display.innerHTML='PERMISSION DENIED';
+            break;
+        case error.POSITION_UNAVAILABLE:
+            display.innerHTML='POSITION UNAVAILABLE';
+            break;
+        case error.TIMEOUT:
+            display.innerHTML='TIMEOUT';
+            break;
+        case error.UNKNOWN_ERROR:
+            display.innerHTML='UNKNOWN ERROR';
+            break;
+    }
+}
+
