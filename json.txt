@@ -1,0 +1,1 @@
+{"name":"Mehedi","age":30,"education":"BSc in CSE","habbit":["Singing Song","Bike Ride","Sleeping"],"device":{"phone":"Redmi Note-10","Computer":"HP G480","speaker":["awei","Air Bird"]},"profession":"Web Developer","smart_Watch":"true"}

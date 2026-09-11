@@ -1,3 +1,19 @@
-Generate words, sentences, and paragraphs of lorem ipsum placeholder text.
+{"name":"Mehedi","age":30,"education":"BSc in CSE","Habbit":["Singing Song","Bike Ride","Sleeping"],"Device":{"Phone":"Redmi Note-10","Computer":"HP G480","Speaker":["awei","Air Bird"]},"Profession":"Web Developer","Smart Watch":"true"}
 
+//{
+    "name":"Mehedi",
+    "age":30,
+    "education":"BSc in CSE",
+    "Habbit":["Singing Song", "Bike Ride", "Sleeping"],
+    "Device":
+    {
+        "Phone":"Redmi Note-10",
+        "Computer":"HP G480",
+        "Speaker":["awei", "Air Bird"]
+    },
+    "Profession":"Web Developer",
+    "Smart Watch": "true"
+}"
+
+Generate words, sentences, and paragraphs of lorem ipsum placeholder text.
 Version 3 supports modern JavaScript runtimes, including Node.js, Bun, Deno, modern browsers, and React Native. It has no runtime dependencies and ships ESM, CommonJS, a browser build, CLI, and TypeScript declaration files.
