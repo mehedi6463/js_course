@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h2>Arrow Function</h2>
+
+    <input type="text" placeholder="type to search.." class="search">
+    <p id="result"></p>
+    <p id="thanks"></p>
+
+    <script>
+        // simple arrow function
+        // let librari = document.getElementById('demo');
+        // const javaScript ={
+        //     name: "JS",
+        //     libraries:['react', 'angular', 'vue'],
+        //     prontLibaries: function () {
+        //         this.libraries.forEach(() => console.log(librari.innerHTML=`${this.libraries} is a library of ${this.name}`));
+                
+        //     },
+        // };
+        // javaScript.prontLibaries();
+        //simple arrow function has end
+
+        //function with addEvenListener
+        const search = document.querySelector(".search");
+        const result = document.querySelector('#result');
+        const thanks = document.querySelector('#thanks');
+        
+        function showData() {
+            result.innerHTML = this.value;
+            // let self = this;
+            setTimeout(() => thanks.innerHTML =`You typed .. ${this.value}`, 2000);
+        }
+        search.addEventListener('keyup', showData);
+
+        // search.addEventListener('keyup', () => console.log(result.innerHTML = this.value)); //not workable like this 
+
+        //NB: new object is not working for arrow function..
+
+    </script>
+
+    
+</body>
+</html>
