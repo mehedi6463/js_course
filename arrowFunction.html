@@ -8,11 +8,13 @@
 <body>
     <h2>Arrow Function</h2>
 
-    <input type="text" placeholder="type to search.." class="search">
+    <!-- <input type="text" placeholder="type to search.." class="search"> <br><br> -->
+    <input type="number" placeholder="Enter your age" class="search">
     <p id="result"></p>
     <p id="thanks"></p>
+    <!-- <button id="submitBtn">Submit</button> -->
 
-    <script>
+   <!-- <script>
         // simple arrow function
         // let librari = document.getElementById('demo');
         // const javaScript ={
@@ -26,23 +28,118 @@
         // javaScript.prontLibaries();
         //simple arrow function has end
 
-        //function with addEvenListener
-        const search = document.querySelector(".search");
-        const result = document.querySelector('#result');
-        const thanks = document.querySelector('#thanks');
+        //function with addEvenListener showing data instant
+        // const search = document.querySelector(".search");
+        // const result = document.querySelector('#result');
+        // const thanks = document.querySelector('#thanks');
         
-        function showData() {
-            result.innerHTML = this.value;
-            // let self = this;
-            setTimeout(() => thanks.innerHTML =`You typed .. ${this.value}`, 2000);
-        }
-        search.addEventListener('keyup', showData);
+        //  var age = 10;
+        // let myAge = (age >= 18) ? "Adult": "Child";
+        // // console.log(myAge);
+
+        // var type;
+        // if (age >= 18) {
+        //     // console.log("Adult");
+        //     type ="Adult";
+        // }else{
+        //     // console.log("Child");
+        //      type ="Child";
+        // }
+
+        // const valie = document.getElementById('result').innerHTML = type;
+
+        
+        // if (type === "Child") {
+        //     search.addEventListener('keyup', showData);
+        // }else{
+        //     search.disable = true;
+        // }
+
+        // function showData() {
+        //     result.innerHTML = this.value;
+        //     // let self = this;
+        //     setTimeout(() => thanks.innerHTML =`You typed .. ${this.value}`, 2000);
+        // }
+        
 
         // search.addEventListener('keyup', () => console.log(result.innerHTML = this.value)); //not workable like this 
 
         //NB: new object is not working for arrow function..
 
+        //ternnery oparator
+       
+
     </script>
+    <script>
+        const search = document.querySelector(".search");
+        const result = document.querySelector('#result');
+        const thanks = document.querySelector('#thanks');
+
+        const age = 21;
+        const type = age >= 18 ? "Adult" : "Child";
+
+        result.innerHTML = type;
+
+        if (type === "Child") {
+            search.disabled = true;   // lock the input
+        } else {
+            search.disabled = false;  // Adult — make sure it's active
+            search.addEventListener('keyup', showData);
+        }
+
+        function showData() {
+            // result.innerHTML = this.value;
+            setTimeout(() => {
+                thanks.innerHTML = `You typed.. ${this.value}`;
+            }, 2000);
+        }
+    </script> -->
+
+    <!-- <script>
+    // const search = document.querySelector(".search");
+    // const result = document.querySelector('#result');
+    // // const submitBtn = document.querySelector('#submitBtn');
+
+
+    // search.disabled = false; // disabled by default until valid input
+
+    // search.addEventListener('keyup', checkAge);
+
+    // function checkAge() {
+    //     const age = Number(this.value);
+    //     const type = age >= 18 ? "Adult" : "Child";
+
+    //     result.innerHTML = this.value ? type : "";
+
+    //     if (type === "Adult" && age !== "") {
+    //         search.disabled = false;
+            
+    //     } else {
+    //         search.disabled = true;
+    //     }
+    // }
+</script> -->
+<!-- <script>
+    const search = document.querySelector(".search");
+const result = document.querySelector('#result');
+
+let keyupCount = 0;
+
+search.addEventListener('keyup', checkAge);
+
+function checkAge() {
+    keyupCount++;
+
+    const age = Number(this.value);
+    const type = age >= 18 ? "Adult" : "Child";
+
+    result.innerHTML = this.value ? type : "";
+
+    if (keyupCount >= 2) {
+        search.disabled = true;
+    }
+}
+</script> -->
 
     
 </body>
