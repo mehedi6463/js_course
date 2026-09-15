@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array find</title>
+</head>
+<body>
+    <h1>Array find() // findIndex()</h1>
+    <p id="demo"></p>
+    <script>
+        var numbers = [0,1,2,3,4,5,6,7,8,9,10,];
+        //find() main value return kore
+        //currentValue
+        // var result = numbers.find(function(currentValue){
+        //     return currentValue > 4;
+        // });
+        //current index
+        // var result = numbers.find(function(currentIndex){
+        //     return currentIndex > 5;
+        // });
+        // console.log(result);
+
+        //class object
+        // class Student {
+        //     constructor(name, age, email) {
+        //         this.name = name;
+        //         this.age = age;
+        //         this.email = email;                
+        //     }
+        //     test(){
+        //         console.log("Hi");
+        //     }
+        //     newFunction(){
+        //         let arry= [1,2,3,4];
+        //         arry.find(() => this.test(arry));
+        //     }
+        // }
+        // let student = new Student("mehedi", 35, "email@gmail.com");
+        // student.newFunction();
+    </script>
+    <script>
+    // findIndex() array index return kore**
+    // var result = numbers.findIndex((currentValue, currentIndex, mainArray) => currentValue > 8);
+    // console.log(result);
+
+
+    //filter() in array**
+    // var result = numbers.filter((currentValue, currentIndex, mainArray) => currentValue > 4);
+    // console.log(result);
+
+    //slice() in array
+    var result = numbers.slice(4, 5);
+    console.log(result);
+
+    </script>
+</body>
+</html>
