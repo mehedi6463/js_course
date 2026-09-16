@@ -11,7 +11,7 @@ document.getElementById("demo1").innerHTML=cars.push("Kiwi");
 /*// pop methood
 document.getElementById("demo1").innerHTML= cars.pop();
 let pOp=cars.pop();
-console.log(pOp);
+console.log(pop);
 */
 
 
