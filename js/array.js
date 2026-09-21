@@ -171,4 +171,12 @@ listItem +="</ul>";*/
 // document.getElementById("demo1").innerHTML= getRndInteger(0, 10);
 
 
+//array reduce() method
+let numbers = [1,2,3,4,5,6,7,8];
+let sum = numbers.reduce((f, c)=>{
+    return f + c;
+},0);
+document.getElementById("demo").innerHTML=sum;
+
+
 
