@@ -19,10 +19,33 @@ console.log(n);
 // document.getElementById("demo").innerHTML = tex;
 // console.log(tex);
 
-//object
-const person ={
+//object key / value method
+// let person ={
+//     name: "mehedi",
+//     age: 30,
+//     email:"mehedi@gmail.com"
+// }
+// let keys =Object.keys(person);
+// console.log(keys);
+
+// let values =Object.values(person);
+// console.log(values);
+
+// let entries =Object.entries(person);
+// console.log(entries);
+
+//speard oparator
+var person1 ={
     name: "mehedi",
     age: 30,
     email:"mehedi@gmail.com"
 }
-console.log(person);
+var person2 ={
+    name: "hasan",
+    age: 31,
+    email:"hasan@gmail.com"
+}
+
+console.log({
+    ...person1, ...person2,
+});
