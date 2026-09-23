@@ -35,17 +35,53 @@ console.log(n);
 // console.log(entries);
 
 //speard oparator
-var person1 ={
-    name: "mehedi",
-    age: 30,
-    email:"mehedi@gmail.com"
-}
-var person2 ={
-    name: "hasan",
-    age: 31,
-    email:"hasan@gmail.com"
-}
+// var person1 ={
+//     name: "mehedi",
+//     age: 30,
+//     email:"mehedi@gmail.com"
+// }
+// var person2 ={
+//     name: "hasan",
+//     age: 31,
+//     email:"hasan@gmail.com"
+// }
 
-console.log({
-    ...person1, ...person2,
-});
+// console.log({
+//     ...person1, ...person2,
+// });
+
+//rest oparator (...params)
+
+// function nameParam(...params) {
+//     console.log(params);    
+// }
+// nameParam("mehedi", "hasan", "shawon");
+
+//destructuring
+const person ={
+    id: 101,
+    fname: "Mehedi",
+    age: 30,
+    education:{
+        degree1: "Masters in Science and Engineering",
+        degree2: "Bachelor in Science and Engineering",
+
+    }
+
+};
+// const {id: Serial, fname: firstName, age} = person;
+// const {fname: firstName} = person;
+// const {age} = person;
+
+// console.log(`ID: ${Serial}`);
+// console.log(`First Name: ${firstName}`);
+// console.log(`Your age: ${age}`);
+
+// nested object
+
+const {education:{degree2: BSc}, education:{degree1: MSc ={}}, age} = person;
+console.log(`Hons: ${BSc}`);
+console.log(`Hons: ${MSc}`);
+console.log(`Hons: ${age}`);
+
+
