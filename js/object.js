@@ -57,18 +57,18 @@ console.log(n);
 // }
 // nameParam("mehedi", "hasan", "shawon");
 
-//destructuring
-const person ={
-    id: 101,
-    fname: "Mehedi",
-    age: 30,
-    education:{
-        degree1: "Masters in Science and Engineering",
-        degree2: "Bachelor in Science and Engineering",
+//object destructuring 
+// const person ={
+//     id: 101,
+//     fname: "Mehedi",
+//     age: 30,
+//     education:{
+//         degree1: "Masters in Science and Engineering",
+//         degree2: "Bachelor in Science and Engineering",
 
-    }
+//     }
 
-};
+// };
 // const {id: Serial, fname: firstName, age} = person;
 // const {fname: firstName} = person;
 // const {age} = person;
@@ -79,9 +79,22 @@ const person ={
 
 // nested object
 
-const {education:{degree2: BSc}, education:{degree1: MSc ={}}, age} = person;
-console.log(`Hons: ${BSc}`);
-console.log(`Hons: ${MSc}`);
-console.log(`Hons: ${age}`);
+// const {education:{degree2: BSc}, education:{degree1: MSc ={}}, age} = person;
+// console.log(`Hons: ${BSc}`);
+// console.log(`Hons: ${MSc}`);
+// console.log(`Hons: ${age}`);
 
+//array destructuring 
+let numbers = [1, 2, 3,[50, 60], 4, 5];
+// let [a, ,b, x,c] = numbers;
+// console.log(a+b-c+x);
+
+
+// nested array destructuring
+let [, , , [z,y]] = numbers;
+console.log(z,y);
+
+// swipe value between two varriable 
+[z, y] =[y, z];
+console.log(z,y);
 
