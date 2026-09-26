@@ -1,12 +1,12 @@
 //for loop,, for in(get key/index),, for of(get value)
-let i=1;
-for (; ; i++) {
-    if (i<=5) {
-        console.log(i);
-    }else{
-        break;
-    }    
-}
+// let i=1;
+// for (; ; i++) {
+//     if (i<=5) {
+//         console.log(i);
+//     }else{
+//         break;
+//     }    
+// }
 
 //for of loop value get kore
 // let newArray =[1,2,3,4,5,6,7,8,9]
@@ -24,6 +24,7 @@ for (; ; i++) {
 // }
 
 //export .. import
-let name = "Mehedi";
-export default name;
-export let newArray =[1,2,3,4,5,6,7,8,9];
+let isdeveloper = false;
+export default isdeveloper;
+export const name = "Mehedi";
+export const age = 29;

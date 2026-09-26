@@ -85,22 +85,25 @@ console.log(n);
 // console.log(`Hons: ${age}`);
 
 //array destructuring 
-let numbers = [1, 2, 3,[50, 60], 4, 5];
+// let numbers = [1, 2, 3,[50, 60], 4, 5];
 // let [a, ,b, x,c] = numbers;
 // console.log(a+b-c+x);
 
 
 // nested array destructuring
-let [, , , [z,y]] = numbers;
-console.log(z,y);
+// let [, , , [z,y]] = numbers;
+// console.log(z,y);
 
 // swipe value between two varriable 
-[z, y] =[y, z];
-console.log(z,y);
+// [z, y] =[y, z];
+// console.log(z,y);
 
 
 // export..import 
-import loopPage, {newArray} from "./forLoop.js";
+// import isdeveloper from "./forLoop.js"; //default import
+// import {name, age} from "./forLoop.js"; //named import
+import isdeveloper, {name, age} from "./forLoop.js"; //both in one line
 
-console.log(loopPage);
-console.log(newArray[1]);
+console.log(isdeveloper);
+console.log(age +" Years");
+console.log(name +" Hasan");
