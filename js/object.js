@@ -98,3 +98,9 @@ console.log(z,y);
 [z, y] =[y, z];
 console.log(z,y);
 
+
+// export..import 
+import loopPage, {newArray} from "./forLoop.js";
+
+console.log(loopPage);
+console.log(newArray[1]);
