@@ -25,6 +25,6 @@
 
 //export .. import
 let isdeveloper = false;
-export default isdeveloper;
+export default isdeveloper; //deafult 
 export const name = "Mehedi";
 export const age = 29;
