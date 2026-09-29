@@ -172,11 +172,53 @@ listItem +="</ul>";*/
 
 
 //array reduce() method
-let numbers = [1,2,3,4,5,6,7,8];
-let sum = numbers.reduce((f, c)=>{
-    return f + c;
-},0);
-document.getElementById("demo").innerHTML=sum;
+// let numbers = [1,2,3,4,5,6,7,8];
+// let sum = numbers.reduce((f, c)=>{
+//     return f + c;
+// },0);
+// document.getElementById("demo").innerHTML=sum;
+
+
+//array reverse()/ toReverse() method 
+// console.log(numbers);
+
+// let revNumbers = numbers.reverse();// after reverse() original array is effected
+// let revNumbers = numbers.toReversed();// after reverse() original array is not effected
+
+// console.log(revNumbers);
+
+//array splice() method *index dhore delete kore koyta del hbe sta parameter e bole dite hobe and new value add kore
+// let arrSplice = numbers.splice(2, 3, 10,20,50); //main array effected
+// let toarrSplice = numbers.toSpliced(2, 3, 10,20,50); //main array not effected
+
+// console.log(arrSplice);
+// console.log(toarrSplice);
+// console.log(numbers);
+
+//array with() method  *index dhore delete kore single value*
+let numbers = [3, 1, 2, 4, 7, 8, 6, 5, 9];
+let numbers1 = [33, 1, 22, 4, 77, 8, 46, 5, 19];
+
+// let result = numbers.with(2, 400); //main array not effected
+
+// console.log (result);
+// console.log(numbers);
+
+
+//array short() method *make number to string then sorted* main array effected
+// let numSort = numbers1.sort(); //for direct srot () use
+
+//using a function for sort
+// let compare = function (a, b) {
+//     return a-b;    
+// }
+let numSort = numbers1.sort((a, b)=> a-b);
+
+console.log(numSort);
+console.log(numbers1);
+
+
+
 
 
 
