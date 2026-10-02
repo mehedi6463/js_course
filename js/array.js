@@ -212,10 +212,60 @@ let numbers1 = [33, 1, 22, 4, 77, 8, 46, 5, 19];
 // let compare = function (a, b) {
 //     return a-b;    
 // }
-let numSort = numbers1.sort((a, b)=> a-b);
+// let numSort = numbers1.sort((a, b)=> a-b);
 
-console.log(numSort);
-console.log(numbers1);
+// console.log(numSort);
+// console.log(numbers1);
+
+
+//sort array of object with numaric and alphabetic
+
+
+const cars = [
+    {
+        type: "Volvo",
+        year: 1999,
+    },
+    {
+        type: "BMW",
+        year: 2000,
+    },
+    {
+        type: "Saab",
+        year: 1995,
+    },
+    {
+        type: "Rols Royels",
+        year: 1990,
+    },
+];
+// short with year (numaric)
+// const yearResult = cars.toSorted((a,b)=>{
+//     return a.year - b.year;
+// })
+// // console.log(result);
+// document.getElementById('demo1').innerHTML= yearResult
+// .map(car=> car.year)
+// .join(" / ");
+
+//sort with type alphabetic
+// const typeResult = cars.toSorted((a, b)=>{
+//     const x = a.type.toLowerCase();
+//     const y = b.type.toLowerCase();
+
+//     if(x < y){
+//         return -1;
+//     }else if(x > y){
+//         return 1;
+//     }else{
+//         return 0;
+//     }
+// });
+// // console.log(result);
+// document.getElementById('demo').innerHTML= typeResult
+// .map(car=> car.type)
+// .join(" / ");
+
 
 
 
